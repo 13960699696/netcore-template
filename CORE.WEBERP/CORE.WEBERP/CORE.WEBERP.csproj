@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>1e076f29-a5ed-4227-86f8-952e56527d18</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP\CORE.WEBERP.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CORE.Business\CORE.Business.csproj" />
+    <ProjectReference Include="..\CORE.Entity\CORE.Entity.csproj" />
+    <ProjectReference Include="..\CORE.Util\CORE.Util.csproj" />
+  </ItemGroup>
+
+
+</Project>

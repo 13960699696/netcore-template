@@ -1,0 +1,367 @@
+2020-07-21 11:59:18.010 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 11:59:18.274 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 11:59:18.277 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 11:59:18.279 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 11:59:18.280 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 11:59:18.282 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 11:59:18.283 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 13:41:56.918 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 13:41:57.179 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 13:41:57.182 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 13:41:57.184 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 13:41:57.186 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 13:41:57.187 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 13:41:57.188 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 13:45:58.498 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 13:45:58.781 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 13:45:58.783 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 13:45:58.785 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 13:45:58.786 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 13:45:58.787 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 13:45:58.789 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 13:47:24.631 +08:00 [INF Microsoft.Hosting.Lifetime] Application is shutting down...
+2020-07-21 13:47:24.632 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2020-07-21 13:47:24.649 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+2020-07-21 13:48:14.003 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 13:48:14.277 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 13:48:14.280 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 13:48:14.282 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 13:48:14.283 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 13:48:14.285 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 13:48:14.286 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 13:52:19.574 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 13:52:19.831 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 13:52:19.834 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 13:52:19.835 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 13:52:19.837 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 13:52:19.838 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 13:52:19.839 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 13:54:35.476 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 13:54:35.739 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 13:54:35.742 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 13:54:35.743 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 13:54:35.745 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 13:54:35.746 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 13:54:35.747 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 13:55:17.020 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 13:55:17.288 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 13:55:17.291 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 13:55:17.293 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 13:55:17.294 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 13:55:17.295 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 13:55:17.296 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 13:57:27.736 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 13:57:28.008 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 13:57:28.011 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 13:57:28.013 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 13:57:28.014 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 13:57:28.016 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 13:57:28.017 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 14:00:22.749 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 14:00:23.028 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 14:00:23.031 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 14:00:23.033 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 14:00:23.034 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 14:00:23.035 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 14:00:23.037 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 14:00:24.684 +08:00 [ERR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EFCore.Sharding.ShardingContainer.FindADbType()
+   at EFCore.Sharding.ShardingDbAccessor..ctor(IShardingConfig shardingConfig, IDbFactory dbFactory)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-07-21 14:05:55.938 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 14:05:56.199 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 14:05:56.202 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 14:05:56.204 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 14:05:56.205 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 14:05:56.206 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 14:05:56.207 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 14:05:57.667 +08:00 [ERR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EFCore.Sharding.ShardingContainer.FindADbType()
+   at EFCore.Sharding.ShardingDbAccessor..ctor(IShardingConfig shardingConfig, IDbFactory dbFactory)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-07-21 14:08:20.276 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 14:08:20.527 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 14:08:20.530 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 14:08:20.532 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 14:08:20.533 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 14:08:20.534 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 14:08:20.535 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 14:08:22.111 +08:00 [ERR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EFCore.Sharding.ShardingContainer.FindADbType()
+   at EFCore.Sharding.ShardingDbAccessor..ctor(IShardingConfig shardingConfig, IDbFactory dbFactory)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-07-21 14:10:53.312 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 14:10:53.568 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 14:10:53.572 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 14:10:53.573 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 14:10:53.575 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 14:10:53.576 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 14:10:53.577 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 14:17:44.472 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 14:17:44.760 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 14:17:44.763 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 14:17:44.765 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 14:17:44.766 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 14:17:44.768 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 14:17:44.769 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 14:39:31.787 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 14:39:32.029 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 14:39:32.032 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 14:39:32.033 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 14:39:32.035 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 14:39:32.036 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 14:39:32.037 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 14:39:34.342 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-21 14:39:49.538 +08:00 [ERR Microsoft.EntityFrameworkCore.Database.Connection] An error occurred using the connection to database 'VMTest' on server 'cdb-5wbhjme9.gz.tencentcdb.com'.
+2020-07-21 14:39:49.599 +08:00 [ERR Microsoft.EntityFrameworkCore.Query] An exception occurred while iterating over the results of a query for context type 'EFCore.Sharding.GenericDbContext'.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 442
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 645
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 312
+   at MySql.Data.MySqlClient.MySqlConnection.Open() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 280
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 442
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 645
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 312
+   at MySql.Data.MySqlClient.MySqlConnection.Open() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 280
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-07-21 14:40:37.025 +08:00 [ERR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 442
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 645
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 312
+   at MySql.Data.MySqlClient.MySqlConnection.Open() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 280
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at EFCore.Sharding.AbstractDbAccessor.GetList[T]()
+   at CORE.WEBERP.Controllers.WeatherForecastController.Get() in G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP\Controllers\WeatherForecastController.cs:line 32
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-07-21 14:40:51.422 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 14:40:51.677 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 14:40:51.680 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 14:40:51.681 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 14:40:51.683 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 14:40:51.684 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 14:40:51.685 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 14:40:53.379 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-21 14:41:08.562 +08:00 [ERR Microsoft.EntityFrameworkCore.Database.Connection] An error occurred using the connection to database 'VMTest' on server 'cdb-5wbhjme9.gz.tencentcdb.com'.
+2020-07-21 14:41:08.622 +08:00 [ERR Microsoft.EntityFrameworkCore.Query] An exception occurred while iterating over the results of a query for context type 'EFCore.Sharding.GenericDbContext'.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 442
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 645
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 312
+   at MySql.Data.MySqlClient.MySqlConnection.Open() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 280
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 442
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 645
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 312
+   at MySql.Data.MySqlClient.MySqlConnection.Open() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 280
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-07-21 14:43:57.104 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 14:43:57.367 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 14:43:57.370 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 14:43:57.371 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 14:43:57.372 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 14:43:57.374 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 14:43:57.375 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 14:43:59.202 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-21 14:43:59.595 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+2020-07-21 15:12:04.659 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 15:12:05.066 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 15:12:05.074 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 15:12:05.077 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 15:12:05.080 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 15:12:05.084 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 15:12:05.090 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 15:12:09.520 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-21 15:12:12.189 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+2020-07-21 16:03:56.457 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 16:03:56.904 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 16:03:56.913 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 16:03:56.916 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 16:03:56.919 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 16:03:56.922 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 16:03:56.925 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 16:04:01.617 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-21 16:04:04.459 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+2020-07-21 17:18:22.619 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 17:18:23.138 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 17:18:23.144 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 17:18:23.154 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 17:18:23.158 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 17:18:23.161 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 17:18:23.170 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 17:18:27.047 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-21 17:18:29.662 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+2020-07-21 17:35:07.786 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 17:35:08.326 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 17:35:08.336 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 17:35:08.340 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 17:35:08.344 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 17:35:08.346 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 17:35:08.349 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 17:35:11.774 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-21 17:35:14.649 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+2020-07-21 17:36:48.824 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-21 17:36:49.335 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-21 17:36:49.340 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-21 17:36:49.343 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-21 17:36:49.346 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-21 17:36:49.348 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-21 17:36:49.351 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-21 17:36:53.089 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-21 17:36:55.666 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`

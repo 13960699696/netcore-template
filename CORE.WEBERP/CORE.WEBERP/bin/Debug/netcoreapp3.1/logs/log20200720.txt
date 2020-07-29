@@ -1,0 +1,49 @@
+2020-07-20 13:49:33.294 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-20 13:49:33.581 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-20 13:49:33.584 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-20 13:49:33.586 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-20 13:49:33.587 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-20 13:49:33.589 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-20 13:49:33.591 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-20 13:50:09.350 +08:00 [INF Microsoft.Hosting.Lifetime] Application is shutting down...
+2020-07-20 13:50:09.350 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2020-07-20 13:50:09.366 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+2020-07-20 13:51:53.755 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-20 13:51:54.051 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-20 13:51:54.054 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-20 13:51:54.056 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-20 13:51:54.058 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-20 13:51:54.059 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-20 13:51:54.061 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-20 13:51:55.703 +08:00 [INF CORE.WEBERP.Controllers.WeatherForecastController] 开始
+2020-07-20 13:51:55.710 +08:00 [DBG CORE.WEBERP.Controllers.WeatherForecastController] 计算两者相除
+2020-07-20 13:51:55.740 +08:00 [ERR CORE.WEBERP.Controllers.WeatherForecastController] 计算出现意外的错误
+System.DivideByZeroException: Attempted to divide by zero.
+   at CORE.WEBERP.Controllers.WeatherForecastController.Get() in G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP\Controllers\WeatherForecastController.cs:line 35
+2020-07-20 13:51:55.829 +08:00 [INF CORE.WEBERP.Controllers.WeatherForecastController] 结束
+2020-07-20 13:55:44.266 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-20 13:55:44.563 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-20 13:55:44.585 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-20 13:55:44.589 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-20 13:55:44.591 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-20 13:55:44.592 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-20 13:55:44.593 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-20 13:55:46.024 +08:00 [INF CORE.WEBERP.Controllers.WeatherForecastController] 开始
+2020-07-20 13:55:46.030 +08:00 [DBG CORE.WEBERP.Controllers.WeatherForecastController] 计算两者相除
+2020-07-20 13:55:46.062 +08:00 [ERR CORE.WEBERP.Controllers.WeatherForecastController] 计算出现意外的错误
+System.DivideByZeroException: Attempted to divide by zero.
+   at CORE.WEBERP.Controllers.WeatherForecastController.Get() in G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP\Controllers\WeatherForecastController.cs:line 35
+2020-07-20 13:55:46.108 +08:00 [INF CORE.WEBERP.Controllers.WeatherForecastController] 结束
+2020-07-20 14:02:37.269 +08:00 [INF Microsoft.Hosting.Lifetime] Application is shutting down...
+2020-07-20 14:02:37.270 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2020-07-20 14:02:37.290 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+2020-07-20 16:04:26.330 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-20 16:04:26.602 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-20 16:04:26.604 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-20 16:04:26.605 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-20 16:04:26.607 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-20 16:04:26.608 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: G:\新ERP程序\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-20 16:04:26.609 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-20 16:13:36.523 +08:00 [INF Microsoft.Hosting.Lifetime] Application is shutting down...
+2020-07-20 16:13:36.523 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2020-07-20 16:13:36.538 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped

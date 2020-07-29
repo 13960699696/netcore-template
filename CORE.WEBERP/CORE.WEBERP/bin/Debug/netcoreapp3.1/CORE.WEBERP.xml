@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CORE.WEBERP</name>
+    </assembly>
+    <members>
+        <member name="T:CORE.WEBERP.Controllers.BaseApiController">
+            <summary>
+            Mvc对外接口基控制器
+            </summary>
+        </member>
+        <member name="T:CORE.WEBERP.Controllers.Base_Manage.HomeController">
+            <summary>
+            首页控制器
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.HomeController.#ctor(CORE.Business.Base_Manage.IHomeBusiness,CORE.Business.Base_Manage.IPermissionBusiness,CORE.Business.Base_Manage.IBase_UserBusiness,CORE.IBusiness.IOperator)">
+            <summary>
+            首页控制器构造函数
+            </summary>
+            <param name="homeBus"></param>
+            <param name="permissionBus"></param>
+            <param name="userBus"></param>
+            <param name="operator"></param>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.HomeController.SubmitLogin(CORE.Business.Base_Manage.LoginInputDTO)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="input">用户账号，密码</param>
+            <returns>返回Token</returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.HomeController.GetOperatorInfo">
+            <summary>
+            获取权限信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.HomeController.ChangePwd(CORE.Business.Base_Manage.ChangePwdInputDTO)">
+            <summary>
+            修改密码
+            </summary>
+            <param name="input">用户旧密码，新密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.HomeController.GetOperatorMenuList">
+            <summary>
+            获取权限菜单列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.Controllers.WeatherForecastController">
+            <summary>
+            测试接口
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{CORE.WEBERP.Controllers.WeatherForecastController},EFCore.Sharding.IDbAccessor)">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="dbAccessor"></param>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.WeatherForecastController.Get">
+            <summary>
+            测试接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.BaseController">
+            <summary>
+            基控制器
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.BaseController.InitEntity(System.Object)">
+            <summary>
+            初始化用户数据
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:CORE.WEBERP.BaseController.GetAbsolutePath(System.String)">
+            <summary>
+            通过虚拟路径获取绝对路径
+            </summary>
+            <param name="virtualPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.BaseController.JsonContent(System.String)">
+            <summary>
+            返回JSON
+            </summary>
+            <param name="jsonStr">json字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.BaseController.HtmlContent(System.String)">
+            <summary>
+            返回html
+            </summary>
+            <param name="body">html内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.BaseController.Success">
+            <summary>
+            返回成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.BaseController.Success``1(``0)">
+            <summary>
+            返回成功
+            </summary>
+            <param name="data">返回数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.BaseController.Success``1(``0,System.String)">
+            <summary>
+            返回成功
+            </summary>
+            <param name="data">返回数据</param>
+            <param name="msg">返回消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.BaseController.Error">
+            <summary>
+            返回错误
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.BaseController.Error(System.String)">
+            <summary>
+            返回错误
+            </summary>
+            <param name="msg">错误提示</param>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.Filter.BaseActionFilterAsync">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.BaseActionFilterAsync.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.BaseActionFilterAsync.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.BaseActionFilterAsync.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="next"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.BaseActionFilterAsync.JsonContent(System.String)">
+            <summary>
+            返回JSON
+            </summary>
+            <param name="json">json字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.BaseActionFilterAsync.Success">
+            <summary>
+            返回成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.BaseActionFilterAsync.Success(System.String)">
+            <summary>
+            返回成功
+            </summary>
+            <param name="msg">消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.BaseActionFilterAsync.Success``1(``0)">
+            <summary>
+            返回成功
+            </summary>
+            <param name="data">返回的数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.BaseActionFilterAsync.Error">
+            <summary>
+            返回错误
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.BaseActionFilterAsync.Error(System.String)">
+            <summary>
+            返回错误
+            </summary>
+            <param name="msg">错误提示</param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.BaseActionFilterAsync.Error(System.String,System.Int32)">
+            <summary>
+            返回错误
+            </summary>
+            <param name="msg">错误提示</param>
+            <param name="errorCode">错误代码</param>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.Filter.CheckJWTAttribute">
+            <summary>
+            JWT校验
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.CheckJWTAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            JWT校验
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.Filter.NoCheckJWTAttribute">
+            <summary>
+            忽略JWT校验
+            </summary>
+        </member>
+        <member name="T:CORE.WEBERP.Filter.GlobalExceptionFilter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.GlobalExceptionFilter.#ctor(Microsoft.Extensions.Logging.ILogger{CORE.WEBERP.Filter.GlobalExceptionFilter})">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.GlobalExceptionFilter.OnExceptionAsync(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.Filter.ValidFilterAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.ValidFilterAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.Filter.ApiLogAttribute">
+            <summary>
+            用户访问日志
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.ApiLogAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            执行前记录请求时间
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.ApiLogAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            执行后记录完成时间，保存到日志
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.Filter.FormatResponseAttribute">
+            <summary>
+            若Action返回对象为自定义对象,则将其转为JSON
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.FormatResponseAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            返回数据判断是否为json，不是则转为json
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.Filter.NoFormatResponseAttribute">
+            <summary>
+            返回结果不进行格式化
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.NoFormatResponseAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Action执行之前执行
+            </summary>
+            <param name="context">过滤器上下文</param>
+        </member>
+        <member name="M:CORE.WEBERP.Filter.NoFormatResponseAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            Action执行完毕之后执行
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:CORE.WEBERP.Middleware.CorsMiddleware">
+            <summary>
+            跨域中间件
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Middleware.CorsMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            管道执行到该中间件时候下一个中间件的RequestDelegate请求委托，如果有其它参数，也同样通过注入的方式获得
+            </summary>
+            <param name="next">下一个处理者</param>
+        </member>
+        <member name="M:CORE.WEBERP.Middleware.CorsMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            自定义中间件要执行的逻辑
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:CORE.WEBERP.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.Startup">
+            <summary>
+            启动服务配置文件
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            启动服务构造函数
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:CORE.WEBERP.Startup.Configuration">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            注册服务
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:CORE.WEBERP.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            启动服务
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:CORE.WEBERP.WeatherForecast">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CORE.WEBERP.WeatherForecast.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CORE.WEBERP.WeatherForecast.TemperatureC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CORE.WEBERP.WeatherForecast.TemperatureF">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CORE.WEBERP.WeatherForecast.Summary">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

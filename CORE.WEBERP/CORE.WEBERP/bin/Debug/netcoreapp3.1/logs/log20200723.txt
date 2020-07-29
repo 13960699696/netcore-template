@@ -1,0 +1,843 @@
+2020-07-23 09:36:20.802 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-23 09:36:21.323 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-23 09:36:21.332 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-23 09:36:21.336 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-23 09:36:21.340 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-23 09:36:21.343 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-23 09:36:21.346 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-23 09:59:21.280 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-23 09:59:24.133 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (63ms) [Parameters=[@__input_userName_0='string' (Size = 4000), @__input_password_1='b45cffe084dd3d20d928bee85e7b0f21' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 09:59:24.669 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:4101ms
+Method:POST
+ContentType:application/json
+Body:{"userName":"string","password":"string"}
+
+Response:
+
+2020-07-23 09:59:24.687 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 10:20:24.324 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (27ms) [Parameters=[@__input_userName_0='string' (Size = 4000), @__input_password_1='b45cffe084dd3d20d928bee85e7b0f21' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 10:20:24.545 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:11844ms
+Method:POST
+ContentType:application/json
+Body:{"userName":"string","password":"string"}
+
+Response:
+
+2020-07-23 10:20:24.558 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 10:40:57.946 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (34ms) [Parameters=[@__input_userName_0='sdadasd' (Size = 4000), @__input_password_1='b447c27a00e3a348881b0030177000cd' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 10:40:58.160 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:14511ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"sdadasd","password":"sadsad"}
+
+Response:
+
+2020-07-23 10:40:58.169 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 10:40:59.716 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='sdadasd' (Size = 4000), @__input_password_1='b447c27a00e3a348881b0030177000cd' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 10:40:59.950 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:384ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"sdadasd","password":"sadsad"}
+
+Response:
+
+2020-07-23 10:40:59.959 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 10:41:40.194 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='sdadasd' (Size = 4000), @__input_password_1='b447c27a00e3a348881b0030177000cd' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 10:41:40.452 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:7796ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"sdadasd","password":"sadsad"}
+
+Response:
+
+2020-07-23 10:41:40.474 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 10:41:43.835 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[@__input_userName_0='sdadasd' (Size = 4000), @__input_password_1='b447c27a00e3a348881b0030177000cd' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 10:41:44.086 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:381ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"sdadasd","password":"sadsad"}
+
+Response:
+
+2020-07-23 10:41:44.095 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 10:42:48.535 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[@__input_userName_0='asdasdas' (Size = 4000), @__input_password_1='8d8d25d0904a5a895f3f88363f2213eb' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 10:42:48.771 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:360ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"asdasdas","password":"dsadsad"}
+
+Response:
+
+2020-07-23 10:42:48.787 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 10:49:21.781 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='dfadfsasd' (Size = 4000), @__input_password_1='ac6555bfe23f5fe7e98fdcc0cd5f2451' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 10:49:22.002 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:2446ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"dfadfsasd","password":"dasdasda"}
+
+Response:
+
+2020-07-23 10:49:22.011 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 11:24:32.502 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (44ms) [Parameters=[@__input_userName_0='dfadfsasd' (Size = 4000), @__input_password_1='4d3c4bc159f3a36fc6ab5178e3100736' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:24:32.718 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:2516ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"dfadfsasd","password":"dasdadsa"}
+
+Response:
+
+2020-07-23 11:24:32.727 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 11:24:56.040 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[@__input_userName_0='sdasdsad' (Size = 4000), @__input_password_1='a0348340791347fd66ed725070f5d87d' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:24:56.270 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:364ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"sdasdsad","password":"dsasdsada"}
+
+Response:
+
+2020-07-23 11:24:56.276 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 11:26:43.998 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='sdasdsad' (Size = 4000), @__input_password_1='a0348340791347fd66ed725070f5d87d' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:26:44.305 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:431ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"sdasdsad","password":"dsasdsada"}
+
+Response:
+
+2020-07-23 11:26:44.323 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 11:27:04.147 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (29ms) [Parameters=[@__input_userName_0='asdsadasdas' (Size = 4000), @__input_password_1='865b8d498d1fb82e92a7e808e82c4111' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:27:04.366 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:360ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"asdsadasdas","password":"dsadasdas"}
+
+Response:
+
+2020-07-23 11:27:04.379 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 11:42:30.878 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[@__input_userName_0='dsasdsad' (Size = 4000), @__input_password_1='2b7203e1d1b1c3dd4615bdd0ffe60736' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:42:31.072 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:2487ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"dsasdsad","password":"sadsadas"}
+
+Response:
+
+2020-07-23 11:42:31.081 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 11:42:38.057 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[@__input_userName_0='dsasdsad' (Size = 4000), @__input_password_1='2b7203e1d1b1c3dd4615bdd0ffe60736' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:42:38.245 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:318ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"dsasdsad","password":"sadsadas"}
+
+Response:
+
+2020-07-23 11:42:38.255 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 11:44:14.763 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:44:14.861 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:229ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTE6NDQ6MTQuNzkxIn0.bltrkFIf3RalGdRdYyA7FZP-BFCtRUgPUihev9hWTPY","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 11:44:18.656 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:44:18.666 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:134ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTE6NDQ6MTguNjY1In0.Q1BAMH9fQ1Fzionz1aqGOZXY6_zOrUQQXYtjKa97_78","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 11:44:46.482 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='dfadfsasd' (Size = 4000), @__input_password_1='ef336e22d067b178885cf8099f2259e7' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:44:46.663 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:312ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"dfadfsasd","password":"sdadasda"}
+
+Response:
+
+2020-07-23 11:44:46.669 +08:00 [INF CORE.WEBERP.Filter.GlobalExceptionFilter] 账号或密码不正确！
+2020-07-23 11:44:56.487 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:44:56.497 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:131ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTE6NDQ6NTYuNDk2In0.XAApH3yIzXgbgFEKa_MJRlQAvq2BoBTQzkM_g4CbTak","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 11:45:48.963 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (34ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:45:48.970 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:135ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTE6NDU6NDguOTY5In0.ysnWLVWix93vKBIee0OUtrCNu3AweToPX2jdnC4_D7A","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 11:51:40.391 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:51:40.397 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:2234ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTE6NTE6NDAuMzk3In0.DT_-b3C7dyrqi9uqkdvffq1Lp-09ddJ-YisI_zYMENs","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 11:53:27.705 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:53:27.712 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:137ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTE6NTM6MjcuNzEyIn0.PmYZ4qQFaGnHPmZ2vrxrNV36mIOMx2pHqF2nT8vqGS4","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 11:54:44.853 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:54:44.862 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:181ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTE6NTQ6NDQuODYyIn0.T_uOsLl2NA6EvnRrXcahXL4_LRWykUyLYuKt3dLo0GQ","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 11:56:45.717 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 11:56:45.726 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:133ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTE6NTY6NDUuNzI1In0.d3qNDOzKDKawPZ0_6Z7QzSsIPPrbb_5B9S1vHxemBjU","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 13:34:41.423 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 13:34:41.434 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:16014ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTM6MzQ6NDEuNDMzIn0.UWIZ7x9h7Y5zfgW9-4PQHbP6aANYQbZUbXqtcoLwEfA","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 13:34:47.512 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 13:34:47.518 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:144ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTM6MzQ6NDcuNTE4In0.9Ane67kgtu8ShislMdbfddZGiRZdmKXBNt0XS1V7H_w","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 13:34:56.114 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 13:34:56.121 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:137ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTM6MzQ6NTYuMTIxIn0.-lTknU3BBmBCqo2KaKTs3sDZKW885weitM-WSnAdRU0","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 13:34:58.249 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 13:34:58.257 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:132ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTM6MzQ6NTguMjU2In0.3XjOPGRVT0AM36jmiyU6E416ajhOgeMJk-wR8nFTmGI","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 13:35:29.081 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 13:35:29.089 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:138ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTM6MzU6MjkuMDg4In0.DuNu8e7irGqec8pqfGzYU1zIn8m2FhwyZGm1LtriNmw","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 13:36:14.037 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 13:36:14.075 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:168ms
+Method:POST
+ContentType:application/json;charset=UTF-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTM6MzY6MTQuMDc0In0.QVeXCphElfdD4WEgShVZkTXbn2tvqo5m_xs4bnkCRCg","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 13:37:03.037 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-23 13:37:04.018 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-23 13:37:04.030 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-23 13:37:04.037 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-23 13:37:04.041 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-23 13:37:04.045 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-23 13:37:04.048 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-23 13:37:55.639 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-23 13:37:58.313 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (60ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 13:37:58.380 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:3309ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTM6Mzc6NTguMzUxIn0.-ROpgDilfdzN5ka0PzSnJOH_KYPFI-iu6y4BFkP5hbw","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 13:40:17.712 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (34ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 13:40:17.719 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:163ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTM6NDA6MTcuNzE5In0.nzBbbkSV7uAOZU2MwmPt-7Vfh2fhGSRw999_ePDCcgc","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 13:44:11.401 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 13:44:11.416 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:2252ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTM6NDQ6MTEuNDE1In0.D-bAPKQlYsXY0-DTP8QazyoBOQ4bVeVVGXPDhGUCHjI","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 13:45:16.337 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (37ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 13:45:16.342 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:138ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTM6NDU6MTYuMzQxIn0.uCqJh1YwekgvcA79T1WzUsXOy0UY64eKPh_JRfD-xXg","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 13:50:06.408 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 13:50:06.418 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:2236ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTM6NTA6MDYuNDE3In0.vtNb7STPUj_1h-FQE1z6FZ6K6drCaEf1odNF89Sv4TE","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 14:27:55.115 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-23 14:27:56.041 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-23 14:27:56.152 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-23 14:27:56.188 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-23 14:27:56.217 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-23 14:27:56.248 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-23 14:27:56.263 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-23 14:27:59.408 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-23 14:28:02.127 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (67ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 14:28:02.196 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:3896ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTQ6Mjg6MDIuMTczIn0.JFJXV3hV9EFyhPfEO4uBB275M2clGtpMez4bpg97bN0","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 14:28:05.507 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 14:28:05.514 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:163ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTQ6Mjg6MDUuNTEzIn0.80eIiZHN_QCv3IVsgl52saaXpNy_1N-pnOj8pwR4dxg","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 14:29:04.580 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (42ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 14:29:04.592 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:169ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTQ6Mjk6MDQuNTkxIn0.ymkiVeSDr0aNzNkkjBhPEeJqznmQs9A0oh5jBYdZ9lI","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 14:30:06.636 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 14:30:06.758 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:273ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTQ6MzA6MDYuNjQ0In0.YF_TDZEvMqDW5WnUnWV0kgAqYkcHGxwDMNh-dRjosAI","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 14:32:23.333 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 14:32:28.516 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:5300ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTQ6MzI6MjguNTEzIn0.fugHx45YB4c4Z-rQICBczkZkc32INnbrBMVaTaGv1gI","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 14:35:50.727 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-23 14:35:51.078 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-23 14:35:51.092 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-23 14:35:51.095 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-23 14:35:51.097 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-23 14:35:51.099 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-23 14:35:51.102 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-23 14:35:59.049 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-23 14:36:01.692 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (62ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 14:36:01.759 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:3234ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTQ6MzY6MDEuNzM0In0.FbbYRodjjVedH0Kg0DYgS8K9lsyOVNRth3D6bwtTEv4","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 14:36:14.775 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[@__search_userId_0='Admin' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+2020-07-23 14:36:15.090 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (37ms) [Parameters=[@__search_userId_0='Admin' (Size = 255), @__p_2='2147483647', @__p_1='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+ORDER BY `b`.`Id`
+LIMIT @__p_2 OFFSET @__p_1
+2020-07-23 14:36:15.235 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('Admin')
+2020-07-23 14:38:57.351 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-23 14:38:57.772 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-23 14:38:57.777 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-23 14:38:57.782 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-23 14:38:57.784 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-23 14:38:57.787 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-23 14:38:57.789 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-23 14:39:50.754 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-23 14:39:53.360 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (58ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 14:39:53.432 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:51512ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTQ6Mzk6NTMuNDA4In0.fnaUqacZUkYb8Q3bdmX683g8RW9rAnUlHKNs5FHZ9XI","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 15:05:58.216 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-23 15:05:58.685 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-23 15:05:58.691 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-23 15:05:58.696 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-23 15:05:58.723 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-23 15:05:58.727 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-23 15:05:58.729 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-23 15:06:27.233 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-23 15:06:29.858 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (57ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 15:06:29.924 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:3228ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTU6MDY6MjkuOTA0In0.s00Tf4IOwACrA4mUDSxKznAb34aCnRIFYfBlf5gq1e0","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 16:13:52.285 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-23 16:13:52.726 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-23 16:13:52.765 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-23 16:13:52.845 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-23 16:13:52.862 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-23 16:13:52.867 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-23 16:13:52.873 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-23 16:14:02.225 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-23 16:14:04.989 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (66ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 16:14:05.061 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:3432ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTY6MTQ6MDUuMDM2In0.n4BF5MHB7sbus0PrrayOYIUHvFSV9IwxNBdzSAw0kOU","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 16:25:38.851 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-23 16:25:39.293 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-23 16:25:39.298 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-23 16:25:39.304 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-23 16:25:39.307 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-23 16:25:39.310 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-23 16:25:39.314 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-23 16:26:00.507 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-23 16:26:03.248 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (61ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 16:26:03.323 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:3601ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTY6MjY6MDMuMjk2In0.0QNU7Y_5SNbE_c5CF_NCd_9Z8H6Cq92e4qgrE6qNa50","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 16:26:03.637 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__search_userId_0='Admin' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+2020-07-23 16:26:03.934 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (35ms) [Parameters=[@__search_userId_0='Admin' (Size = 255), @__p_2='2147483647', @__p_1='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+ORDER BY `b`.`Id`
+LIMIT @__p_2 OFFSET @__p_1
+2020-07-23 16:28:08.098 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('Admin')
+2020-07-23 16:28:08.214 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (40ms) [Parameters=[@__search_userId_0='Admin' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+2020-07-23 16:28:08.345 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__search_userId_0='Admin' (Size = 255), @__p_2='2147483647', @__p_1='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+ORDER BY `b`.`Id`
+LIMIT @__p_2 OFFSET @__p_1
+2020-07-23 16:28:08.462 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('Admin')
+2020-07-23 16:28:09.048 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`
+FROM `Base_Action` AS `b`
+2020-07-23 16:28:09.225 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Icon`, `b`.`Name`, `b`.`NeedAction`, `b`.`ParentId`, `b`.`Sort`, `b`.`Type`, `b`.`Url`, `b`.`Value`
+FROM `Base_Action` AS `b`
+WHERE `b`.`Type` IN (2) AND `b`.`Id` IN ('1178957405992521728', '1178957553778823168', '1179018395304071168', '1182652266117599232', '1182652367447789568', '1182652433302556672', '1188801057778569216', '1188801057778569217', '1188801057778569218', '1188801109783744512', '1188801109783744513', '1188801109783744514', '1188801273885888512', '1188801273885888513', '1188801273885888514', '1188801341661646848', '1188801341661646849', '1188801341661646850', '1193158266167758848', '1193158630615027712', '1193158780011941888', '1251792477787000832', '1251792477787000833', '1251792477787000834', '1251792721769664512')
+ORDER BY `b`.`Sort`
+2020-07-23 16:28:09.247 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/GetOperatorInfo
+Time:125855ms
+Method:POST
+ContentType:null
+Body:
+
+Response:{"Data":{"UserInfo":{"Id":"Admin","CreateTime":"2019-09-13 21:10:03.000","CreatorId":"Admin","Deleted":false,"UserName":"Admin","Password":"e10adc3949ba59abbe56e057f20f883e","RealName":"超级管理员","Sex":1,"Birthday":"2019-09-13 00:00:00.000","DepartmentId":null,"RoleNames":"","RoleIdList":[],"RoleNameList":[],"RoleType":0,"DepartmentName":null,"SexText":"男人","BirthdayText":"2019-09-13"},"Permissions":["Base_Role.Add","Base_Role.Edit","Base_Role.Delete","Base_Department.Add","Base_Department.Edit","Base_Department.Delete","Base_AppSecret.Add","Base_AppSecret.Edit","Base_AppSecret.Delete","Base_Action.Add","Base_Action.Edit","Base_Action.Delete","Base_User.Add","Base_User.Edit","Base_User.Delete"]},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 16:53:22.275 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-23 16:53:22.705 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-23 16:53:22.720 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-23 16:53:22.723 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-23 16:53:22.726 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-23 16:53:22.729 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-23 16:53:22.757 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-23 17:23:27.409 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-07-23 17:23:27.827 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-07-23 17:23:27.832 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-07-23 17:23:27.836 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-07-23 17:23:27.838 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-07-23 17:23:27.841 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Desktop\netcore-erp\CORE.WEBERP\CORE.WEBERP
+2020-07-23 17:23:27.844 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-07-23 17:24:34.216 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-07-23 17:24:37.027 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (64ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='e10adc3949ba59abbe56e057f20f883e' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-07-23 17:24:37.088 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:3611ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"123456"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJBZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDctMjQgMTc6MjQ6MzcuMDY4In0.bNUL2Mckk0l7isSJxg6XMlJTEyBlQuNqfmbdyJVWOxA","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-07-23 17:24:37.435 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (36ms) [Parameters=[@__search_userId_0='Admin' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+2020-07-23 17:24:37.757 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (42ms) [Parameters=[@__search_userId_0='Admin' (Size = 255), @__p_2='2147483647', @__p_1='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+ORDER BY `b`.`Id`
+LIMIT @__p_2 OFFSET @__p_1
+2020-07-23 17:24:37.914 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('Admin')
+2020-07-23 17:24:38.032 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (36ms) [Parameters=[@__search_userId_0='Admin' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+2020-07-23 17:24:38.159 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (41ms) [Parameters=[@__search_userId_0='Admin' (Size = 255), @__p_2='2147483647', @__p_1='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+ORDER BY `b`.`Id`
+LIMIT @__p_2 OFFSET @__p_1
+2020-07-23 17:24:38.274 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('Admin')
+2020-07-23 17:24:38.397 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`
+FROM `Base_Action` AS `b`
+2020-07-23 17:24:38.531 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Icon`, `b`.`Name`, `b`.`NeedAction`, `b`.`ParentId`, `b`.`Sort`, `b`.`Type`, `b`.`Url`, `b`.`Value`
+FROM `Base_Action` AS `b`
+WHERE `b`.`Type` IN (2) AND `b`.`Id` IN ('1178957405992521728', '1178957553778823168', '1179018395304071168', '1182652266117599232', '1182652367447789568', '1182652433302556672', '1188801057778569216', '1188801057778569217', '1188801057778569218', '1188801109783744512', '1188801109783744513', '1188801109783744514', '1188801273885888512', '1188801273885888513', '1188801273885888514', '1188801341661646848', '1188801341661646849', '1188801341661646850', '1193158266167758848', '1193158630615027712', '1193158780011941888', '1251792477787000832', '1251792477787000833', '1251792477787000834', '1251792721769664512')
+ORDER BY `b`.`Sort`
+2020-07-23 17:24:38.552 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/GetOperatorInfo
+Time:1366ms
+Method:POST
+ContentType:null
+Body:
+
+Response:{"Data":{"UserInfo":{"Id":"Admin","CreateTime":"2019-09-13 21:10:03.000","CreatorId":"Admin","Deleted":false,"UserName":"Admin","Password":"e10adc3949ba59abbe56e057f20f883e","RealName":"超级管理员","Sex":1,"Birthday":"2019-09-13 00:00:00.000","DepartmentId":null,"RoleNames":"","RoleIdList":[],"RoleNameList":[],"RoleType":0,"DepartmentName":null,"SexText":"男人","BirthdayText":"2019-09-13"},"Permissions":["Base_Role.Add","Base_Role.Edit","Base_Role.Delete","Base_Department.Add","Base_Department.Edit","Base_Department.Delete","Base_AppSecret.Add","Base_AppSecret.Edit","Base_AppSecret.Delete","Base_Action.Add","Base_Action.Edit","Base_Action.Delete","Base_User.Add","Base_User.Edit","Base_User.Delete"]},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
