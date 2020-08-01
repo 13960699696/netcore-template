@@ -33,7 +33,6 @@ namespace CORE.Business.Base_Manage
                     Text = x.Name,
                     Value = x.Id
                 }).ToList();
-
             return TreeHelper.BuildTree(treeList);
         }
 

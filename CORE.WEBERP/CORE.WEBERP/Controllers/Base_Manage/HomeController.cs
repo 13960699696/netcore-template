@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using CORE.Business.Base_Manage;
 using CORE.IBusiness;
 using CORE.WEBERP.Filter;
@@ -15,25 +14,21 @@ namespace CORE.WEBERP.Controllers.Base_Manage
     {
         readonly IHomeBusiness _homeBus;
         readonly IPermissionBusiness _permissionBus;
-        readonly IBase_UserBusiness _userBus;
         readonly IOperator _operator;
         /// <summary>
         /// 首页控制器构造函数
         /// </summary>
         /// <param name="homeBus"></param>
         /// <param name="permissionBus"></param>
-        /// <param name="userBus"></param>
         /// <param name="operator"></param>
         public HomeController(
             IHomeBusiness homeBus,
             IPermissionBusiness permissionBus,
-            IBase_UserBusiness userBus,
             IOperator @operator
             )
         {
             _homeBus = homeBus;
             _permissionBus = permissionBus;
-            _userBus = userBus;
             _operator = @operator;
         }
 
@@ -74,16 +69,6 @@ namespace CORE.WEBERP.Controllers.Base_Manage
         public async Task ChangePwd(ChangePwdInputDTO input)
         {
             await _homeBus.ChangePwdAsync(input);
-        }
-        
-        /// <summary>
-        /// 获取权限菜单列表
-        /// </summary>
-        /// <returns></returns>
-        [HttpPost]
-        public async Task<List<Base_ActionDTO>> GetOperatorMenuList()
-        {
-            return await _permissionBus.GetUserMenuListAsync(_operator.UserId);
         }
     }
 }

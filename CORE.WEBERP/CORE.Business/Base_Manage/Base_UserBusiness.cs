@@ -36,7 +36,11 @@ namespace CORE.Business.Base_Manage
         protected override string _textField => "RealName";
 
         #region 外部接口
-
+        /// <summary>
+        /// 获取数据列表
+        /// </summary>
+        /// <param name="input">是否延迟加载,用户id，关键字来查询</param>
+        /// <returns></returns>
         public async Task<PageResult<Base_UserDTO>> GetDataListAsync(PageInput<Base_UsersInputDTO> input)
         {
             //Base_User表左连接Base_Department表获取DepartmentName属性
@@ -110,6 +114,7 @@ namespace CORE.Business.Base_Manage
                 return (await GetDataListAsync(input)).Data.FirstOrDefault();
             }
         }
+
         [DataAddLog(UserLogType.系统用户管理, "RealName", "用户")]
         [DataRepeatValidate(
             new string[] { "UserName" },

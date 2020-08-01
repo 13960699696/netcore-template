@@ -9,18 +9,141 @@
             Mvc对外接口基控制器
             </summary>
         </member>
+        <member name="T:CORE.WEBERP.Controllers.Base_Manage.Base_DepartmentController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_DepartmentController.#ctor(CORE.Business.Base_Manage.IBase_DepartmentBusiness)">
+            <summary>
+            
+            </summary>
+            <param name="departmentBus"></param>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_DepartmentController.GetTheData(CORE.Util.IdInputDTO)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_DepartmentController.GetTreeDataList(CORE.Business.Base_Manage.DepartmentsTreeInputDTO)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_DepartmentController.SaveData(CORE.Entity.Base_Manage.Base_Department)">
+            <summary>
+            
+            </summary>
+            <param name="theData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_DepartmentController.DeleteData(System.Collections.Generic.List{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.Controllers.Base_Manage.Base_RoleController">
+            <summary>
+            应用密钥
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_RoleController.#ctor(CORE.Business.Base_Manage.IBase_RoleBusiness)">
+            <summary>
+            
+            </summary>
+            <param name="roleBus"></param>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_RoleController.GetDataList(CORE.Util.PageInput{CORE.Business.Base_Manage.RolesInputDTO})">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_RoleController.GetTheData(CORE.Util.IdInputDTO)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_RoleController.SaveData(CORE.Business.Base_Manage.Base_RoleInfoDTO)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_RoleController.DeleteData(System.Collections.Generic.List{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.Controllers.Base_Manage.Base_UserController">
+            <summary>
+            用户控制器
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_UserController.#ctor(CORE.Business.Base_Manage.IBase_UserBusiness)">
+            <summary>
+            用户控制器构造函数
+            </summary>
+            <param name="userBus"></param>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_UserController.GetDataList(CORE.Util.PageInput{CORE.Business.Base_Manage.Base_UsersInputDTO})">
+            <summary>
+            获取用户列表
+            </summary>
+            <param name="input">根据[(bool)是否延迟查询，(string)用户id，(string)关键字]来查询</param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_UserController.GetTheData(CORE.Util.IdInputDTO)">
+            <summary>
+            获取用户
+            </summary>
+            <param name="input">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_UserController.GetOptionList(CORE.Util.OptionListInputDTO)">
+            <summary>
+            获取用户列表(id范围)
+            </summary>
+            <param name="input">根据[(List)用户id，(string)关键字]来查询</param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_UserController.SaveData(CORE.Business.Base_Manage.UserEditInputDTO)">
+            <summary>
+            保存、编辑用户数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_UserController.DeleteData(System.Collections.Generic.List{System.String})">
+            <summary>
+            批量删除用户数据
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
         <member name="T:CORE.WEBERP.Controllers.Base_Manage.HomeController">
             <summary>
             首页控制器
             </summary>
         </member>
-        <member name="M:CORE.WEBERP.Controllers.Base_Manage.HomeController.#ctor(CORE.Business.Base_Manage.IHomeBusiness,CORE.Business.Base_Manage.IPermissionBusiness,CORE.Business.Base_Manage.IBase_UserBusiness,CORE.IBusiness.IOperator)">
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.HomeController.#ctor(CORE.Business.Base_Manage.IHomeBusiness,CORE.Business.Base_Manage.IPermissionBusiness,CORE.IBusiness.IOperator)">
             <summary>
             首页控制器构造函数
             </summary>
             <param name="homeBus"></param>
             <param name="permissionBus"></param>
-            <param name="userBus"></param>
             <param name="operator"></param>
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.HomeController.SubmitLogin(CORE.Business.Base_Manage.LoginInputDTO)">
@@ -41,12 +164,6 @@
             修改密码
             </summary>
             <param name="input">用户旧密码，新密码</param>
-            <returns></returns>
-        </member>
-        <member name="M:CORE.WEBERP.Controllers.Base_Manage.HomeController.GetOperatorMenuList">
-            <summary>
-            获取权限菜单列表
-            </summary>
             <returns></returns>
         </member>
         <member name="T:CORE.WEBERP.Controllers.WeatherForecastController">
