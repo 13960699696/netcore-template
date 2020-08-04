@@ -71,7 +71,7 @@ namespace CORE.Business.Base_Manage
         public async Task AddDataAsync(Base_RoleInfoDTO input)
         {
             await InsertAsync(_mapper.Map<Base_Role>(input));
-            await SetRoleActionAsync(input.Id, input.Actions);
+            await SetRoleActionAsync(input.Id, input.Actions,input.CreatorId);
         }
 
         [DataEditLog(UserLogType.系统角色管理, "RoleName", "角色")]
@@ -80,7 +80,7 @@ namespace CORE.Business.Base_Manage
         public async Task UpdateDataAsync(Base_RoleInfoDTO input)
         {
             await UpdateAsync(_mapper.Map<Base_Role>(input));
-            await SetRoleActionAsync(input.Id, input.Actions);
+            await SetRoleActionAsync(input.Id, input.Actions, input.CreatorId);
         }
 
         [DataDeleteLog(UserLogType.系统角色管理, "RoleName", "角色")]
@@ -95,13 +95,14 @@ namespace CORE.Business.Base_Manage
 
         #region 私有成员
 
-        private async Task SetRoleActionAsync(string roleId, List<string> actions)
+        private async Task SetRoleActionAsync(string roleId, List<string> actions, string creatorId)
         {
             var roleActions = (actions ?? new List<string>())
                 .Select(x => new Base_RoleAction
                 {
                     Id = IdHelper.GetId(),
                     ActionId = x,
+                    CreatorId= creatorId,
                     CreateTime = DateTime.Now,
                     RoleId = roleId
                 }).ToList();

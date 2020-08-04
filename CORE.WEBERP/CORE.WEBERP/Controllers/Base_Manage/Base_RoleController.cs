@@ -10,14 +10,14 @@ using Microsoft.AspNetCore.Mvc;
 namespace CORE.WEBERP.Controllers.Base_Manage
 {
     /// <summary>
-    /// 应用密钥
+    /// 角色控制器
     /// </summary>
     [Route("/Base_Manage/[controller]/[action]")]
     public class Base_RoleController : BaseApiController
     {
         #region DI
         /// <summary>
-        /// 
+        /// 角色控制器构造函数
         /// </summary>
         /// <param name="roleBus"></param>
         public Base_RoleController(IBase_RoleBusiness roleBus)
@@ -31,7 +31,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
 
         #region 获取
         /// <summary>
-        /// 
+        /// 获取角色列表
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -41,7 +41,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
             return await _roleBus.GetDataListAsync(input);
         }
         /// <summary>
-        /// 
+        /// 获取角色
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -55,7 +55,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
 
         #region 提交
         /// <summary>
-        /// 
+        /// 保存，编辑角色数据
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -74,7 +74,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
             }
         }
         /// <summary>
-        /// 
+        /// 批量删除角色数据
         /// </summary>
         /// <param name="ids"></param>
         /// <returns></returns>

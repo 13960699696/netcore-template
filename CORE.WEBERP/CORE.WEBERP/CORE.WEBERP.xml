@@ -9,6 +9,65 @@
             Mvc对外接口基控制器
             </summary>
         </member>
+        <member name="T:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController">
+            <summary>
+            系统权限
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.#ctor(CORE.Business.Base_Manage.IBase_ActionBusiness)">
+            <summary>
+            
+            </summary>
+            <param name="actionBus"></param>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.GetTheData(CORE.Util.IdInputDTO)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.GetPermissionList(CORE.Business.Base_Manage.Base_ActionsInputDTO)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.GetAllActionList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.GetMenuTreeList(CORE.Business.Base_Manage.Base_ActionsInputDTO)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.GetActionTreeList(CORE.Business.Base_Manage.Base_ActionsInputDTO)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.SaveData(CORE.Business.Base_Manage.ActionEditInputDTO)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.DeleteData(System.Collections.Generic.List{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
         <member name="T:CORE.WEBERP.Controllers.Base_Manage.Base_DepartmentController">
             <summary>
             
@@ -50,39 +109,39 @@
         </member>
         <member name="T:CORE.WEBERP.Controllers.Base_Manage.Base_RoleController">
             <summary>
-            应用密钥
+            角色控制器
             </summary>
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_RoleController.#ctor(CORE.Business.Base_Manage.IBase_RoleBusiness)">
             <summary>
-            
+            角色控制器构造函数
             </summary>
             <param name="roleBus"></param>
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_RoleController.GetDataList(CORE.Util.PageInput{CORE.Business.Base_Manage.RolesInputDTO})">
             <summary>
-            
+            获取角色列表
             </summary>
             <param name="input"></param>
             <returns></returns>
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_RoleController.GetTheData(CORE.Util.IdInputDTO)">
             <summary>
-            
+            获取角色
             </summary>
             <param name="input"></param>
             <returns></returns>
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_RoleController.SaveData(CORE.Business.Base_Manage.Base_RoleInfoDTO)">
             <summary>
-            
+            保存，编辑角色数据
             </summary>
             <param name="input"></param>
             <returns></returns>
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_RoleController.DeleteData(System.Collections.Generic.List{System.String})">
             <summary>
-            
+            批量删除角色数据
             </summary>
             <param name="ids"></param>
             <returns></returns>
