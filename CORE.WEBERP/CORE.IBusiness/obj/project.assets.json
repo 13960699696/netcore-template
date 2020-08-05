@@ -9430,11 +9430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PCXT\\Desktop\\netcore-erp\\CORE.WEBERP\\CORE.IBusiness\\CORE.IBusiness.csproj",
+      "projectUniqueName": "C:\\Users\\PCXT\\Documents\\netcore-template\\CORE.WEBERP\\CORE.IBusiness\\CORE.IBusiness.csproj",
       "projectName": "CORE.IBusiness",
-      "projectPath": "C:\\Users\\PCXT\\Desktop\\netcore-erp\\CORE.WEBERP\\CORE.IBusiness\\CORE.IBusiness.csproj",
+      "projectPath": "C:\\Users\\PCXT\\Documents\\netcore-template\\CORE.WEBERP\\CORE.IBusiness\\CORE.IBusiness.csproj",
       "packagesPath": "C:\\Users\\PCXT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PCXT\\Desktop\\netcore-erp\\CORE.WEBERP\\CORE.IBusiness\\obj\\",
+      "outputPath": "C:\\Users\\PCXT\\Documents\\netcore-template\\CORE.WEBERP\\CORE.IBusiness\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -9454,11 +9454,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\PCXT\\Desktop\\netcore-erp\\CORE.WEBERP\\CORE.Entity\\CORE.Entity.csproj": {
-              "projectPath": "C:\\Users\\PCXT\\Desktop\\netcore-erp\\CORE.WEBERP\\CORE.Entity\\CORE.Entity.csproj"
+            "C:\\Users\\PCXT\\Documents\\netcore-template\\CORE.WEBERP\\CORE.Entity\\CORE.Entity.csproj": {
+              "projectPath": "C:\\Users\\PCXT\\Documents\\netcore-template\\CORE.WEBERP\\CORE.Entity\\CORE.Entity.csproj"
             },
-            "C:\\Users\\PCXT\\Desktop\\netcore-erp\\CORE.WEBERP\\CORE.Util\\CORE.Util.csproj": {
-              "projectPath": "C:\\Users\\PCXT\\Desktop\\netcore-erp\\CORE.WEBERP\\CORE.Util\\CORE.Util.csproj"
+            "C:\\Users\\PCXT\\Documents\\netcore-template\\CORE.WEBERP\\CORE.Util\\CORE.Util.csproj": {
+              "projectPath": "C:\\Users\\PCXT\\Documents\\netcore-template\\CORE.WEBERP\\CORE.Util\\CORE.Util.csproj"
             }
           }
         }

@@ -29,7 +29,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
 
         #region 获取
         /// <summary>
-        /// 
+        /// 获取部门
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -39,7 +39,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
             return await _departmentBus.GetTheDataAsync(input.id) ?? new Base_Department();
         }
         /// <summary>
-        /// 
+        /// 获取部门目录树
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -53,7 +53,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
 
         #region 提交
         /// <summary>
-        /// 
+        /// 保存，编辑部门数据
         /// </summary>
         /// <param name="theData"></param>
         /// <returns></returns>
@@ -72,7 +72,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
             }
         }
         /// <summary>
-        /// 
+        /// 批量删除部门数据
         /// </summary>
         /// <param name="ids"></param>
         /// <returns></returns>

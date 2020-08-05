@@ -9393,11 +9393,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PCXT\\Desktop\\netcore-erp\\CORE.WEBERP\\CORE.Util\\CORE.Util.csproj",
+      "projectUniqueName": "C:\\Users\\PCXT\\Documents\\netcore-template\\CORE.WEBERP\\CORE.Util\\CORE.Util.csproj",
       "projectName": "CORE.Util",
-      "projectPath": "C:\\Users\\PCXT\\Desktop\\netcore-erp\\CORE.WEBERP\\CORE.Util\\CORE.Util.csproj",
+      "projectPath": "C:\\Users\\PCXT\\Documents\\netcore-template\\CORE.WEBERP\\CORE.Util\\CORE.Util.csproj",
       "packagesPath": "C:\\Users\\PCXT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PCXT\\Desktop\\netcore-erp\\CORE.WEBERP\\CORE.Util\\obj\\",
+      "outputPath": "C:\\Users\\PCXT\\Documents\\netcore-template\\CORE.WEBERP\\CORE.Util\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

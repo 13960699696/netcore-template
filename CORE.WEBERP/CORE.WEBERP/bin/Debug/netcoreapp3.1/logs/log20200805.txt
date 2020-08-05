@@ -1,0 +1,1070 @@
+2020-08-05 13:41:13.275 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2020-08-05 13:41:14.355 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: https://localhost:5001
+2020-08-05 13:41:14.365 +08:00 [INF Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2020-08-05 13:41:14.371 +08:00 [INF Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2020-08-05 13:41:14.375 +08:00 [INF Microsoft.Hosting.Lifetime] Hosting environment: Development
+2020-08-05 13:41:14.379 +08:00 [INF Microsoft.Hosting.Lifetime] Content root path: C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.WEBERP
+2020-08-05 13:41:14.383 +08:00 [DBG Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2020-08-05 13:42:26.949 +08:00 [WRN Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development.
+2020-08-05 13:42:27.776 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (71ms) [Parameters=[@__input_userName_0='admin' (Size = 4000), @__input_password_1='0192023a7bbd73250516f069df18b500' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Birthday`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`DepartmentId`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`UserName`
+FROM `Base_User` AS `b`
+WHERE (`b`.`UserName` = @__input_userName_0) AND (`b`.`Password` = @__input_password_1)
+LIMIT 1
+2020-08-05 13:42:27.861 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/SubmitLogin
+Time:1600ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"userName":"admin","password":"admin123"}
+
+Response:{"Data":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJhZG1pbiIsIkV4cGlyZSI6IjIwMjAtMDgtMDYgMTM6NDI6MjcuODI0In0.FYEIz-7SUK2fMQ2ZpzvCG4ewDeq0PVWP2nQbfXeyH7o","Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 13:42:28.281 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[@__search_userId_0='admin' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+2020-08-05 13:42:28.762 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[@__search_userId_0='admin' (Size = 255), @__p_2='10', @__p_1='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+ORDER BY `b`.`Id`
+LIMIT @__p_2 OFFSET @__p_1
+2020-08-05 13:42:28.911 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('admin')
+2020-08-05 13:42:29.033 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[@__search_userId_0='admin' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+2020-08-05 13:42:29.134 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__search_userId_0='admin' (Size = 255), @__p_2='10', @__p_1='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+ORDER BY `b`.`Id`
+LIMIT @__p_2 OFFSET @__p_1
+2020-08-05 13:42:29.272 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('admin')
+2020-08-05 13:42:29.376 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`
+FROM `Base_Action` AS `b`
+2020-08-05 13:42:29.506 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Icon`, `b`.`Name`, `b`.`NeedAction`, `b`.`ParentId`, `b`.`Sort`, `b`.`Type`, `b`.`Url`, `b`.`Value`
+FROM `Base_Action` AS `b`
+WHERE `b`.`Type` IN (2) AND `b`.`Id` IN ('1178957405992521728', '1178957553778823168', '1179018395304071168', '1182652266117599232', '1182652367447789568', '1182652433302556672', '1188801057778569216', '1188801057778569217', '1188801057778569218', '1188801109783744512', '1188801109783744513', '1188801109783744514', '1188801273885888512', '1188801273885888513', '1188801273885888514', '1188801341661646848', '1188801341661646849', '1188801341661646850', '1193158266167758848', '1251792477787000832', '1251792477787000833', '1251792477787000834')
+ORDER BY `b`.`Sort`
+2020-08-05 13:42:29.518 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/GetOperatorInfo
+Time:1583ms
+Method:POST
+ContentType:null
+Body:
+
+Response:{"Data":{"UserInfo":{"Id":"admin","CreateTime":"2019-09-13 21:10:03.000","CreatorId":"admin","Deleted":false,"UserName":"admin","Password":"0192023a7bbd73250516f069df18b500","RealName":"admin","Sex":1,"Birthday":"2019-09-13 00:00:00.000","DepartmentId":"1","RoleNames":"超级管理员","RoleIdList":["1180486275199668224"],"RoleNameList":["超级管理员"],"RoleType":1,"DepartmentName":null,"SexText":"男人","BirthdayText":"2019-09-13"},"Permissions":["Base_Role.Add","Base_Role.Edit","Base_Role.Delete","Base_Department.Add","Base_Department.Edit","Base_Department.Delete","Base_AppSecret.Add","Base_AppSecret.Edit","Base_AppSecret.Delete","Base_Action.Add","Base_Action.Edit","Base_Action.Delete","Base_User.Add","Base_User.Edit","Base_User.Delete"]},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 13:42:34.992 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+2020-08-05 13:42:35.098 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+ORDER BY `b`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2020-08-05 13:42:35.192 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('1181928860648738816', '1289441062527438848', '1289443564085841920', '1289449792690196480', '1289450190641565696', '1289450820676358144', '1289451402560540672', 'admin')
+2020-08-05 13:42:35.204 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_User/GetDataList
+Time:339ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"PageIndex":1,"PageRows":10,"SortField":"Id","SortType":"asc","Search":{}}
+
+Response:{"Total":8,"Data":[{"Id":"1181928860648738816","CreateTime":"2019-10-09 21:46:14.000","CreatorId":"admin","Deleted":false,"UserName":"夏海丰","Password":"e10adc3949ba59abbe56e057f20f883e","RealName":"夏海丰","Sex":1,"Birthday":"2020-07-28 00:00:00.000","DepartmentId":"1181175803631636480","RoleNames":"数据运营部管理员","RoleIdList":["1180819481383931904"],"RoleNameList":["数据运营部管理员"],"RoleType":2,"DepartmentName":"数据运营部","SexText":"男人","BirthdayText":"2020-07-28"},{"Id":"1289441062527438848","CreateTime":"2020-08-01 14:01:21.000","CreatorId":"admin","Deleted":false,"UserName":"徐涛","Password":"0192023a7bbd73250516f069df18b500","RealName":"徐涛","Sex":1,"Birthday":"1991-07-09 00:00:00.000","DepartmentId":"1181175803631636480","RoleNames":"超级管理员","RoleIdList":["1180486275199668224"],"RoleNameList":["超级管理员"],"RoleType":1,"DepartmentName":"数据运营部","SexText":"男人","BirthdayText":"1991-07-09"},{"Id":"1289443564085841920","CreateTime":"2020-08-01 14:11:17.000","CreatorId":"admin","Deleted":false,"UserName":"卓然冰"......
+
+2020-08-05 13:42:39.624 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 13:42:39.647 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:184ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 13:49:21.273 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 13:49:21.285 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:227ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 13:50:39.373 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 13:50:39.398 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:261ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:08:45.733 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (45ms) [Parameters=[@__search_userId_0='admin' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+2020-08-05 14:08:45.883 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[@__search_userId_0='admin' (Size = 255), @__p_2='10', @__p_1='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+ORDER BY `b`.`Id`
+LIMIT @__p_2 OFFSET @__p_1
+2020-08-05 14:08:46.000 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('admin')
+2020-08-05 14:08:46.108 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`
+FROM `Base_Action` AS `b`
+2020-08-05 14:08:46.222 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Icon`, `b`.`Name`, `b`.`NeedAction`, `b`.`ParentId`, `b`.`Sort`, `b`.`Type`, `b`.`Url`, `b`.`Value`
+FROM `Base_Action` AS `b`
+WHERE `b`.`Type` IN (2) AND `b`.`Id` IN ('1178957405992521728', '1178957553778823168', '1179018395304071168', '1182652266117599232', '1182652367447789568', '1182652433302556672', '1188801057778569216', '1188801057778569217', '1188801057778569218', '1188801109783744512', '1188801109783744513', '1188801109783744514', '1188801273885888512', '1188801273885888513', '1188801273885888514', '1188801341661646848', '1188801341661646849', '1188801341661646850', '1193158266167758848', '1251792477787000832', '1251792477787000833', '1251792477787000834')
+ORDER BY `b`.`Sort`
+2020-08-05 14:08:46.235 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/GetOperatorInfo
+Time:890ms
+Method:POST
+ContentType:null
+Body:
+
+Response:{"Data":{"UserInfo":{"Id":"admin","CreateTime":"2019-09-13 21:10:03.000","CreatorId":"admin","Deleted":false,"UserName":"admin","Password":"0192023a7bbd73250516f069df18b500","RealName":"admin","Sex":1,"Birthday":"2019-09-13 00:00:00.000","DepartmentId":"1","RoleNames":"超级管理员","RoleIdList":["1180486275199668224"],"RoleNameList":["超级管理员"],"RoleType":1,"DepartmentName":null,"SexText":"男人","BirthdayText":"2019-09-13"},"Permissions":["Base_Role.Add","Base_Role.Edit","Base_Role.Delete","Base_Department.Add","Base_Department.Edit","Base_Department.Delete","Base_AppSecret.Add","Base_AppSecret.Edit","Base_AppSecret.Delete","Base_Action.Add","Base_Action.Edit","Base_Action.Delete","Base_User.Add","Base_User.Edit","Base_User.Delete"]},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:08:46.804 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:08:46.818 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:161ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:09:54.300 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (38ms) [Parameters=[@__search_userId_0='admin' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+2020-08-05 14:09:54.458 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (37ms) [Parameters=[@__search_userId_0='admin' (Size = 255), @__p_2='10', @__p_1='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+ORDER BY `b`.`Id`
+LIMIT @__p_2 OFFSET @__p_1
+2020-08-05 14:09:54.571 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('admin')
+2020-08-05 14:09:54.679 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`
+FROM `Base_Action` AS `b`
+2020-08-05 14:09:54.789 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Icon`, `b`.`Name`, `b`.`NeedAction`, `b`.`ParentId`, `b`.`Sort`, `b`.`Type`, `b`.`Url`, `b`.`Value`
+FROM `Base_Action` AS `b`
+WHERE `b`.`Type` IN (2) AND `b`.`Id` IN ('1178957405992521728', '1178957553778823168', '1179018395304071168', '1182652266117599232', '1182652367447789568', '1182652433302556672', '1188801057778569216', '1188801057778569217', '1188801057778569218', '1188801109783744512', '1188801109783744513', '1188801109783744514', '1188801273885888512', '1188801273885888513', '1188801273885888514', '1188801341661646848', '1188801341661646849', '1188801341661646850', '1193158266167758848', '1251792477787000832', '1251792477787000833', '1251792477787000834')
+ORDER BY `b`.`Sort`
+2020-08-05 14:09:54.804 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/GetOperatorInfo
+Time:887ms
+Method:POST
+ContentType:null
+Body:
+
+Response:{"Data":{"UserInfo":{"Id":"admin","CreateTime":"2019-09-13 21:10:03.000","CreatorId":"admin","Deleted":false,"UserName":"admin","Password":"0192023a7bbd73250516f069df18b500","RealName":"admin","Sex":1,"Birthday":"2019-09-13 00:00:00.000","DepartmentId":"1","RoleNames":"超级管理员","RoleIdList":["1180486275199668224"],"RoleNameList":["超级管理员"],"RoleType":1,"DepartmentName":null,"SexText":"男人","BirthdayText":"2019-09-13"},"Permissions":["Base_Role.Add","Base_Role.Edit","Base_Role.Delete","Base_Department.Add","Base_Department.Edit","Base_Department.Delete","Base_AppSecret.Add","Base_AppSecret.Edit","Base_AppSecret.Delete","Base_Action.Add","Base_Action.Edit","Base_Action.Delete","Base_User.Add","Base_User.Edit","Base_User.Delete"]},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:09:55.285 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:09:55.291 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:187ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:10:03.480 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_Role` AS `b`
+2020-08-05 14:10:03.606 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (35ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Id`, `b`.`RoleName`
+FROM `Base_Role` AS `b`
+ORDER BY `b`.`Id`
+LIMIT @__p_1 OFFSET @__p_0
+2020-08-05 14:10:03.725 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`
+FROM `Base_Action` AS `b`
+2020-08-05 14:10:03.852 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`ActionId`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`RoleId`
+FROM `Base_RoleAction` AS `b`
+WHERE `b`.`RoleId` IN ('1180486275199668224', '1180819481383931904', '1290202319882817536', '1290204250864881664')
+2020-08-05 14:10:03.873 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Role/GetDataList
+Time:581ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"PageIndex":1,"PageRows":10,"SortField":"Id","SortType":"asc","Search":{}}
+
+Response:{"Total":4,"Data":[{"Id":"1180486275199668224","CreateTime":"2019-10-05 22:13:55.000","CreatorId":"admin","Deleted":false,"RoleName":"超级管理员","RoleType":1,"Actions":["1178957405992521728","1178957553778823168","1179018395304071168","1182652266117599232","1182652367447789568","1182652433302556672","1188801057778569216","1188801057778569217","1188801057778569218","1188801109783744512","1188801109783744513","1188801109783744514","1188801273885888512","1188801273885888513","1188801273885888514","1188801341661646848","1188801341661646849","1188801341661646850","1193158266167758848","1251792477787000832","1251792477787000833","1251792477787000834"]},{"Id":"1180819481383931904","CreateTime":"2019-10-06 20:17:57.000","CreatorId":"admin","Deleted":false,"RoleName":"数据运营部管理员","RoleType":2,"Actions":["1193158266167758848"]},{"Id":"1290202319882817536","CreateTime":"2020-08-03 16:26:19.000","CreatorId":"admin","Deleted":false,"RoleName":"管理部管理员","RoleType":0,"Actions":["1193158266167758848"]},{"Id"......
+
+2020-08-05 14:10:07.457 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:10:07.468 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:151ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:11:51.081 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:11:51.089 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:523ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:11:54.088 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (39ms) [Parameters=[@__search_userId_0='admin' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+2020-08-05 14:11:54.229 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[@__search_userId_0='admin' (Size = 255), @__p_2='10', @__p_1='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+ORDER BY `b`.`Id`
+LIMIT @__p_2 OFFSET @__p_1
+2020-08-05 14:11:54.336 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('admin')
+2020-08-05 14:11:54.444 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`
+FROM `Base_Action` AS `b`
+2020-08-05 14:11:54.555 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Icon`, `b`.`Name`, `b`.`NeedAction`, `b`.`ParentId`, `b`.`Sort`, `b`.`Type`, `b`.`Url`, `b`.`Value`
+FROM `Base_Action` AS `b`
+WHERE `b`.`Type` IN (2) AND `b`.`Id` IN ('1178957405992521728', '1178957553778823168', '1179018395304071168', '1182652266117599232', '1182652367447789568', '1182652433302556672', '1188801057778569216', '1188801057778569217', '1188801057778569218', '1188801109783744512', '1188801109783744513', '1188801109783744514', '1188801273885888512', '1188801273885888513', '1188801273885888514', '1188801341661646848', '1188801341661646849', '1188801341661646850', '1193158266167758848', '1251792477787000832', '1251792477787000833', '1251792477787000834')
+ORDER BY `b`.`Sort`
+2020-08-05 14:11:54.565 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/GetOperatorInfo
+Time:836ms
+Method:POST
+ContentType:null
+Body:
+
+Response:{"Data":{"UserInfo":{"Id":"admin","CreateTime":"2019-09-13 21:10:03.000","CreatorId":"admin","Deleted":false,"UserName":"admin","Password":"0192023a7bbd73250516f069df18b500","RealName":"admin","Sex":1,"Birthday":"2019-09-13 00:00:00.000","DepartmentId":"1","RoleNames":"超级管理员","RoleIdList":["1180486275199668224"],"RoleNameList":["超级管理员"],"RoleType":1,"DepartmentName":null,"SexText":"男人","BirthdayText":"2019-09-13"},"Permissions":["Base_Role.Add","Base_Role.Edit","Base_Role.Delete","Base_Department.Add","Base_Department.Edit","Base_Department.Delete","Base_AppSecret.Add","Base_AppSecret.Edit","Base_AppSecret.Delete","Base_Action.Add","Base_Action.Edit","Base_Action.Delete","Base_User.Add","Base_User.Edit","Base_User.Delete"]},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:11:55.067 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:11:55.071 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:144ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:12:43.449 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[@__search_userId_0='admin' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+2020-08-05 14:12:43.663 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (129ms) [Parameters=[@__search_userId_0='admin' (Size = 255), @__p_2='10', @__p_1='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+ORDER BY `b`.`Id`
+LIMIT @__p_2 OFFSET @__p_1
+2020-08-05 14:12:43.788 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('admin')
+2020-08-05 14:12:43.894 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`
+FROM `Base_Action` AS `b`
+2020-08-05 14:12:44.004 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Icon`, `b`.`Name`, `b`.`NeedAction`, `b`.`ParentId`, `b`.`Sort`, `b`.`Type`, `b`.`Url`, `b`.`Value`
+FROM `Base_Action` AS `b`
+WHERE `b`.`Type` IN (2) AND `b`.`Id` IN ('1178957405992521728', '1178957553778823168', '1179018395304071168', '1182652266117599232', '1182652367447789568', '1182652433302556672', '1188801057778569216', '1188801057778569217', '1188801057778569218', '1188801109783744512', '1188801109783744513', '1188801109783744514', '1188801273885888512', '1188801273885888513', '1188801273885888514', '1188801341661646848', '1188801341661646849', '1188801341661646850', '1193158266167758848', '1251792477787000832', '1251792477787000833', '1251792477787000834')
+ORDER BY `b`.`Sort`
+2020-08-05 14:12:44.012 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/GetOperatorInfo
+Time:849ms
+Method:POST
+ContentType:null
+Body:
+
+Response:{"Data":{"UserInfo":{"Id":"admin","CreateTime":"2019-09-13 21:10:03.000","CreatorId":"admin","Deleted":false,"UserName":"admin","Password":"0192023a7bbd73250516f069df18b500","RealName":"admin","Sex":1,"Birthday":"2019-09-13 00:00:00.000","DepartmentId":"1","RoleNames":"超级管理员","RoleIdList":["1180486275199668224"],"RoleNameList":["超级管理员"],"RoleType":1,"DepartmentName":null,"SexText":"男人","BirthdayText":"2019-09-13"},"Permissions":["Base_Role.Add","Base_Role.Edit","Base_Role.Delete","Base_Department.Add","Base_Department.Edit","Base_Department.Delete","Base_AppSecret.Add","Base_AppSecret.Edit","Base_AppSecret.Delete","Base_Action.Add","Base_Action.Edit","Base_Action.Delete","Base_User.Add","Base_User.Edit","Base_User.Delete"]},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:12:44.455 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:12:44.463 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:165ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:12:48.296 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:12:48.302 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:150ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:13:34.042 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:13:34.052 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:160ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:14:00.527 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:14:00.530 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:171ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:15:25.662 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:15:25.690 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:168ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:15:52.227 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:15:52.238 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:150ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:19:47.430 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:19:47.435 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:207ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:20:51.633 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:20:51.639 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:129ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:24:44.564 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:24:44.580 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:265ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:24:55.800 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (46ms) [Parameters=[@__search_userId_0='admin' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+2020-08-05 14:24:56.140 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@__search_userId_0='admin' (Size = 255), @__p_2='10', @__p_1='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+ORDER BY `b`.`Id`
+LIMIT @__p_2 OFFSET @__p_1
+2020-08-05 14:24:56.242 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('admin')
+2020-08-05 14:24:56.350 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`
+FROM `Base_Action` AS `b`
+2020-08-05 14:24:56.447 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Icon`, `b`.`Name`, `b`.`NeedAction`, `b`.`ParentId`, `b`.`Sort`, `b`.`Type`, `b`.`Url`, `b`.`Value`
+FROM `Base_Action` AS `b`
+WHERE `b`.`Type` IN (2) AND `b`.`Id` IN ('1178957405992521728', '1178957553778823168', '1179018395304071168', '1182652266117599232', '1182652367447789568', '1182652433302556672', '1188801057778569216', '1188801057778569217', '1188801057778569218', '1188801109783744512', '1188801109783744513', '1188801109783744514', '1188801273885888512', '1188801273885888513', '1188801273885888514', '1188801341661646848', '1188801341661646849', '1188801341661646850', '1193158266167758848', '1251792477787000832', '1251792477787000833', '1251792477787000834')
+ORDER BY `b`.`Sort`
+2020-08-05 14:24:56.484 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/GetOperatorInfo
+Time:942ms
+Method:POST
+ContentType:null
+Body:
+
+Response:{"Data":{"UserInfo":{"Id":"admin","CreateTime":"2019-09-13 21:10:03.000","CreatorId":"admin","Deleted":false,"UserName":"admin","Password":"0192023a7bbd73250516f069df18b500","RealName":"admin","Sex":1,"Birthday":"2019-09-13 00:00:00.000","DepartmentId":"1","RoleNames":"超级管理员","RoleIdList":["1180486275199668224"],"RoleNameList":["超级管理员"],"RoleType":1,"DepartmentName":null,"SexText":"男人","BirthdayText":"2019-09-13"},"Permissions":["Base_Role.Add","Base_Role.Edit","Base_Role.Delete","Base_Department.Add","Base_Department.Edit","Base_Department.Delete","Base_AppSecret.Add","Base_AppSecret.Edit","Base_AppSecret.Delete","Base_Action.Add","Base_Action.Edit","Base_Action.Delete","Base_User.Add","Base_User.Edit","Base_User.Delete"]},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:24:57.154 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:24:57.174 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:149ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:45:04.510 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:45:04.515 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:255ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:49:03.211 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (26ms) [Parameters=[@__search_userId_0='admin' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+2020-08-05 14:49:03.293 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (25ms) [Parameters=[@__search_userId_0='admin' (Size = 255), @__p_2='10', @__p_1='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`UserName`, `b`.`Password`, `b`.`RealName`, `b`.`Sex`, `b`.`Birthday`, `b`.`DepartmentId`, `b0`.`Name` AS `DepartmentName`
+FROM `Base_User` AS `b`
+LEFT JOIN `Base_Department` AS `b0` ON `b`.`DepartmentId` = `b0`.`Id`
+WHERE `b`.`Id` = @__search_userId_0
+ORDER BY `b`.`Id`
+LIMIT @__p_2 OFFSET @__p_1
+2020-08-05 14:49:03.405 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`UserId`, `b0`.`Id` AS `RoleId`, `b0`.`RoleName`
+FROM `Base_UserRole` AS `b`
+INNER JOIN `Base_Role` AS `b0` ON `b`.`RoleId` = `b0`.`Id`
+WHERE `b`.`UserId` IN ('admin')
+2020-08-05 14:49:03.554 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`
+FROM `Base_Action` AS `b`
+2020-08-05 14:49:03.694 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Icon`, `b`.`Name`, `b`.`NeedAction`, `b`.`ParentId`, `b`.`Sort`, `b`.`Type`, `b`.`Url`, `b`.`Value`
+FROM `Base_Action` AS `b`
+WHERE `b`.`Type` IN (2) AND `b`.`Id` IN ('1178957405992521728', '1178957553778823168', '1179018395304071168', '1182652266117599232', '1182652367447789568', '1182652433302556672', '1188801057778569216', '1188801057778569217', '1188801057778569218', '1188801109783744512', '1188801109783744513', '1188801109783744514', '1188801273885888512', '1188801273885888513', '1188801273885888514', '1188801341661646848', '1188801341661646849', '1188801341661646850', '1193158266167758848', '1251792477787000832', '1251792477787000833', '1251792477787000834')
+ORDER BY `b`.`Sort`
+2020-08-05 14:49:03.713 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Home/GetOperatorInfo
+Time:723ms
+Method:POST
+ContentType:null
+Body:
+
+Response:{"Data":{"UserInfo":{"Id":"admin","CreateTime":"2019-09-13 21:10:03.000","CreatorId":"admin","Deleted":false,"UserName":"admin","Password":"0192023a7bbd73250516f069df18b500","RealName":"admin","Sex":1,"Birthday":"2019-09-13 00:00:00.000","DepartmentId":"1","RoleNames":"超级管理员","RoleIdList":["1180486275199668224"],"RoleNameList":["超级管理员"],"RoleType":1,"DepartmentName":null,"SexText":"男人","BirthdayText":"2019-09-13"},"Permissions":["Base_Role.Add","Base_Role.Edit","Base_Role.Delete","Base_Department.Add","Base_Department.Edit","Base_Department.Delete","Base_AppSecret.Add","Base_AppSecret.Edit","Base_AppSecret.Delete","Base_Action.Add","Base_Action.Edit","Base_Action.Delete","Base_User.Add","Base_User.Edit","Base_User.Delete"]},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:49:04.181 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:49:04.187 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:112ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:49:44.791 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:49:44.800 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:133ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 14:49:58.439 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+WHERE (`b`.`Id` <> '1290902851689648128') AND (`b`.`Name` = '财务部')
+2020-08-05 14:49:58.773 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (26ms) [Parameters=[@p0='1290902851689648128' (Nullable = false) (Size = 255), @p1='2020-08-05T14:49:58' (DbType = DateTime), @p2='admin' (Size = 4000), @p3='False', @p4='财务部' (Size = 4000), @p5='1181175685528424448' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Base_Department` (`Id`, `CreateTime`, `CreatorId`, `Deleted`, `Name`, `ParentId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2020-08-05 14:49:58.871 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/SaveData
+Time:596ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"Name":"财务部","ParentId":"1181175685528424448"}
+
+Response:{"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:49:59.039 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (25ms) [Parameters=[@p0='1290902853900046336' (Nullable = false) (Size = 255), @p1='2020-08-05T14:49:58' (DbType = DateTime), @p2='admin' (Size = 4000), @p3='admin' (Size = 4000), @p4='添加部门名:财务部' (Size = 4000), @p5='部门管理' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Base_UserLog` (`Id`, `CreateTime`, `CreatorId`, `CreatorRealName`, `LogContent`, `LogType`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2020-08-05 14:49:59.165 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:49:59.172 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:246ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631......
+
+2020-08-05 14:55:22.020 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:55:22.024 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:213ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631......
+
+2020-08-05 14:55:43.400 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+WHERE (`b`.`Id` <> '1290904298728722432') AND (`b`.`Name` = '昊森')
+2020-08-05 14:55:43.533 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (26ms) [Parameters=[@p0='1290904298728722432' (Nullable = false) (Size = 255), @p1='2020-08-05T14:55:43' (DbType = DateTime), @p2='admin' (Size = 4000), @p3='False', @p4='昊森' (Size = 4000), @p5=NULL (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Base_Department` (`Id`, `CreateTime`, `CreatorId`, `Deleted`, `Name`, `ParentId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2020-08-05 14:55:43.573 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/SaveData
+Time:281ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"Name":"昊森"}
+
+Response:{"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:55:43.721 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (27ms) [Parameters=[@p0='1290904299798269952' (Nullable = false) (Size = 255), @p1='2020-08-05T14:55:43' (DbType = DateTime), @p2='admin' (Size = 4000), @p3='admin' (Size = 4000), @p4='添加部门名:昊森' (Size = 4000), @p5='部门管理' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Base_UserLog` (`Id`, `CreateTime`, `CreatorId`, `CreatorRealName`, `LogContent`, `LogType`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2020-08-05 14:55:43.862 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:55:43.874 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:236ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631......
+
+2020-08-05 14:57:54.505 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:57:54.511 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:128ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631......
+
+2020-08-05 14:58:11.902 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:58:11.924 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:149ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631......
+
+2020-08-05 14:58:14.336 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:58:14.379 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:166ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631......
+
+2020-08-05 14:58:14.475 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (28ms) [Parameters=[@__p_0='1290904298728722432' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+WHERE `b`.`Id` = @__p_0
+LIMIT 1
+2020-08-05 14:58:14.490 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTheData
+Time:235ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"id":"1290904298728722432"}
+
+Response:{"Data":{"Id":"1290904298728722432","CreateTime":"2020-08-05 14:55:43.000","CreatorId":"admin","Deleted":false,"Name":"昊森","ParentId":null},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:58:17.630 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:58:17.634 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:171ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631......
+
+2020-08-05 14:58:17.694 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (67ms) [Parameters=[@__p_0='1290902851689648128' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+WHERE `b`.`Id` = @__p_0
+LIMIT 1
+2020-08-05 14:58:17.709 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTheData
+Time:246ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"id":"1290902851689648128"}
+
+Response:{"Data":{"Id":"1290902851689648128","CreateTime":"2020-08-05 14:49:58.000","CreatorId":"admin","Deleted":false,"Name":"财务部","ParentId":"1181175685528424448"},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:58:49.005 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:58:49.009 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:119ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631......
+
+2020-08-05 14:59:01.648 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+WHERE (`b`.`Id` <> '1290905130228518912') AND (`b`.`Name` = '嘻嘻嘻部')
+2020-08-05 14:59:01.785 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (27ms) [Parameters=[@p0='1290905130228518912' (Nullable = false) (Size = 255), @p1='2020-08-05T14:59:01' (DbType = DateTime), @p2='admin' (Size = 4000), @p3='False', @p4='嘻嘻嘻部' (Size = 4000), @p5='1181175685528424448' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Base_Department` (`Id`, `CreateTime`, `CreatorId`, `Deleted`, `Name`, `ParentId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2020-08-05 14:59:01.841 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/SaveData
+Time:299ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"ParentId":"1181175685528424448","Name":"嘻嘻嘻部"}
+
+Response:{"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:59:01.996 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:59:01.996 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (43ms) [Parameters=[@p0='1290905131365175296' (Nullable = false) (Size = 255), @p1='2020-08-05T14:59:01' (DbType = DateTime), @p2='admin' (Size = 4000), @p3='admin' (Size = 4000), @p4='添加部门名:嘻嘻嘻部' (Size = 4000), @p5='部门管理' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Base_UserLog` (`Id`, `CreateTime`, `CreatorId`, `CreatorRealName`, `LogContent`, `LogType`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2020-08-05 14:59:02.004 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:123ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null},{"children":null,"title":"嘻嘻嘻部","value":"1290905130228518912","key":"1290905130228518912","Id":"1290905130228518912","Value":"1290905130228518912","ParentId":"1181175685528424448","Level":2,"Text":"嘻嘻嘻部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"118117568552842444......
+
+2020-08-05 14:59:05.037 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:59:05.042 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:217ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null},{"children":null,"title":"嘻嘻嘻部","value":"1290905130228518912","key":"1290905130228518912","Id":"1290905130228518912","Value":"1290905130228518912","ParentId":"1181175685528424448","Level":2,"Text":"嘻嘻嘻部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"118117568552842444......
+
+2020-08-05 14:59:05.050 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[@__p_0='1290905130228518912' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+WHERE `b`.`Id` = @__p_0
+LIMIT 1
+2020-08-05 14:59:05.058 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTheData
+Time:232ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"id":"1290905130228518912"}
+
+Response:{"Data":{"Id":"1290905130228518912","CreateTime":"2020-08-05 14:59:02.000","CreatorId":"admin","Deleted":false,"Name":"嘻嘻嘻部","ParentId":"1181175685528424448"},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:59:11.762 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+WHERE (`b`.`Id` <> '1290905130228518912') AND (`b`.`Name` = '生产部')
+2020-08-05 14:59:11.924 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (28ms) [Parameters=[@p5='1290905130228518912' (Nullable = false) (Size = 255), @p0='2020-08-05T14:59:02' (DbType = DateTime), @p1='admin' (Size = 4000), @p2='False', @p3='生产部' (Size = 4000), @p4='1181175685528424448' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `Base_Department` SET `CreateTime` = @p0, `CreatorId` = @p1, `Deleted` = @p2, `Name` = @p3, `ParentId` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2020-08-05 14:59:11.967 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/SaveData
+Time:321ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"Id":"1290905130228518912","CreateTime":"2020-08-05 14:59:02.000","CreatorId":"admin","Deleted":false,"Name":"生产部","ParentId":"1181175685528424448"}
+
+Response:{"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:59:12.130 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:59:12.130 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[@p0='1290905173866057728' (Nullable = false) (Size = 255), @p1='2020-08-05T14:59:11' (DbType = DateTime), @p2='admin' (Size = 4000), @p3='admin' (Size = 4000), @p4='修改部门名:生产部' (Size = 4000), @p5='部门管理' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Base_UserLog` (`Id`, `CreateTime`, `CreatorId`, `CreatorRealName`, `LogContent`, `LogType`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2020-08-05 14:59:12.164 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:148ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null},{"children":null,"title":"生产部","value":"1290905130228518912","key":"1290905130228518912","Id":"1290905130228518912","Value":"1290905130228518912","ParentId":"1181175685528424448","Level":2,"Text":"生产部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448"......
+
+2020-08-05 14:59:25.274 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[@__p_0='1290905130228518912' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+WHERE `b`.`Id` = @__p_0
+LIMIT 1
+2020-08-05 14:59:25.281 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTheData
+Time:144ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"id":"1290905130228518912"}
+
+Response:{"Data":{"Id":"1290905130228518912","CreateTime":"2020-08-05 14:59:02.000","CreatorId":"admin","Deleted":false,"Name":"生产部","ParentId":"1181175685528424448"},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:59:25.286 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:59:25.318 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:173ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null},{"children":null,"title":"生产部","value":"1290905130228518912","key":"1290905130228518912","Id":"1290905130228518912","Value":"1290905130228518912","ParentId":"1181175685528424448","Level":2,"Text":"生产部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448"......
+
+2020-08-05 14:59:28.836 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+WHERE (`b`.`Id` <> '1290905130228518912') AND (`b`.`Name` = '生产部')
+2020-08-05 14:59:28.966 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (24ms) [Parameters=[@p5='1290905130228518912' (Nullable = false) (Size = 255), @p0='2020-08-05T14:59:02' (DbType = DateTime), @p1='admin' (Size = 4000), @p2='False', @p3='生产部' (Size = 4000), @p4='1290904298728722432' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `Base_Department` SET `CreateTime` = @p0, `CreatorId` = @p1, `Deleted` = @p2, `Name` = @p3, `ParentId` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2020-08-05 14:59:29.002 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/SaveData
+Time:272ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"Id":"1290905130228518912","CreateTime":"2020-08-05 14:59:02.000","CreatorId":"admin","Deleted":false,"Name":"生产部","ParentId":"1290904298728722432"}
+
+Response:{"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:59:29.186 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:59:29.198 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (29ms) [Parameters=[@p0='1290905245320220672' (Nullable = false) (Size = 255), @p1='2020-08-05T14:59:29' (DbType = DateTime), @p2='admin' (Size = 4000), @p3='admin' (Size = 4000), @p4='修改部门名:生产部' (Size = 4000), @p5='部门管理' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Base_UserLog` (`Id`, `CreateTime`, `CreatorId`, `CreatorRealName`, `LogContent`, `LogType`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2020-08-05 14:59:29.198 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:132ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631......
+
+2020-08-05 14:59:32.070 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[@__p_0='1290905130228518912' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+WHERE `b`.`Id` = @__p_0
+LIMIT 1
+2020-08-05 14:59:32.075 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTheData
+Time:189ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"id":"1290905130228518912"}
+
+Response:{"Data":{"Id":"1290905130228518912","CreateTime":"2020-08-05 14:59:02.000","CreatorId":"admin","Deleted":false,"Name":"生产部","ParentId":"1290904298728722432"},"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:59:32.116 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:59:32.121 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:235ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631......
+
+2020-08-05 14:59:34.491 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+WHERE (`b`.`Id` <> '1290905130228518912') AND (`b`.`Name` = '生产部')
+2020-08-05 14:59:34.642 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[@p5='1290905130228518912' (Nullable = false) (Size = 255), @p0='2020-08-05T14:59:02' (DbType = DateTime), @p1='admin' (Size = 4000), @p2='False', @p3='生产部' (Size = 4000), @p4='1181175685528424448' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `Base_Department` SET `CreateTime` = @p0, `CreatorId` = @p1, `Deleted` = @p2, `Name` = @p3, `ParentId` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2020-08-05 14:59:34.688 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/SaveData
+Time:304ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{"Id":"1290905130228518912","CreateTime":"2020-08-05 14:59:02.000","CreatorId":"admin","Deleted":false,"Name":"生产部","ParentId":"1181175685528424448"}
+
+Response:{"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 14:59:34.870 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 14:59:34.910 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:177ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null},{"children":null,"title":"生产部","value":"1290905130228518912","key":"1290905130228518912","Id":"1290905130228518912","Value":"1290905130228518912","ParentId":"1181175685528424448","Level":2,"Text":"生产部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448"......
+
+2020-08-05 14:59:34.931 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (60ms) [Parameters=[@p0='1290905269139673088' (Nullable = false) (Size = 255), @p1='2020-08-05T14:59:34' (DbType = DateTime), @p2='admin' (Size = 4000), @p3='admin' (Size = 4000), @p4='修改部门名:生产部' (Size = 4000), @p5='部门管理' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Base_UserLog` (`Id`, `CreateTime`, `CreatorId`, `CreatorRealName`, `LogContent`, `LogType`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2020-08-05 15:01:20.253 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 15:01:20.374 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:281ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null},{"children":null,"title":"生产部","value":"1290905130228518912","key":"1290905130228518912","Id":"1290905130228518912","Value":"1290905130228518912","ParentId":"1181175685528424448","Level":2,"Text":"生产部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448"......
+
+2020-08-05 15:01:30.412 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 15:01:30.538 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:262ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null},{"children":null,"title":"生产部","value":"1290905130228518912","key":"1290905130228518912","Id":"1290905130228518912","Value":"1290905130228518912","ParentId":"1181175685528424448","Level":2,"Text":"生产部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448"......
+
+2020-08-05 15:11:25.397 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+WHERE `b`.`Id` IN ('1290904298728722432')
+2020-08-05 15:11:25.524 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Base_Department` AS `b`
+    WHERE `b`.`ParentId` IN ('1290904298728722432'))
+2020-08-05 15:11:25.692 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (29ms) [Parameters=[@p0='1290904298728722432' (Nullable = false) (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM `Base_Department`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+2020-08-05 15:11:25.743 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/DeleteData
+Time:573ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:["1290904298728722432"]
+
+Response:{"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 15:11:25.912 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (44ms) [Parameters=[@p0='1290908251512115200' (Nullable = false) (Size = 255), @p1='2020-08-05T15:11:25' (DbType = DateTime), @p2='admin' (Size = 4000), @p3='admin' (Size = 4000), @p4='删除部门名:昊森' (Size = 4000), @p5='部门管理' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Base_UserLog` (`Id`, `CreateTime`, `CreatorId`, `CreatorRealName`, `LogContent`, `LogType`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2020-08-05 15:11:25.996 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 15:11:26.007 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:193ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null},{"children":null,"title":"生产部","value":"1290905130228518912","key":"1290905130228518912","Id":"1290905130228518912","Value":"1290905130228518912","ParentId":"1181175685528424448","Level":2,"Text":"生产部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448"......
+
+2020-08-05 15:12:18.525 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 15:12:18.530 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:142ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null},{"children":null,"title":"财务部","value":"1290902851689648128","key":"1290902851689648128","Id":"1290902851689648128","Value":"1290902851689648128","ParentId":"1181175685528424448","Level":2,"Text":"财务部","Children":null},{"children":null,"title":"生产部","value":"1290905130228518912","key":"1290905130228518912","Id":"1290905130228518912","Value":"1290905130228518912","ParentId":"1181175685528424448","Level":2,"Text":"生产部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448"......
+
+2020-08-05 15:12:24.343 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+WHERE `b`.`Id` IN ('1290905130228518912', '1290902851689648128')
+2020-08-05 15:12:24.444 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Base_Department` AS `b`
+    WHERE `b`.`ParentId` IN ('1290905130228518912', '1290902851689648128'))
+2020-08-05 15:12:24.618 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (30ms) [Parameters=[@p0='1290902851689648128' (Nullable = false) (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM `Base_Department`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+2020-08-05 15:12:24.657 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (32ms) [Parameters=[@p0='1290905130228518912' (Nullable = false) (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM `Base_Department`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+2020-08-05 15:12:24.696 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/DeleteData
+Time:486ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:["1290905130228518912","1290902851689648128"]
+
+Response:{"Success":true,"ErrorCode":0,"Msg":"请求成功！"}
+
+2020-08-05 15:12:24.843 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 15:12:24.847 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:103ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+
+2020-08-05 15:12:24.874 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (40ms) [Parameters=[@p0='1290908498816667648' (Nullable = false) (Size = 255), @p1='2020-08-05T15:12:24' (DbType = DateTime), @p2='admin' (Size = 4000), @p3='admin' (Size = 4000), @p4='删除部门名:财务部,生产部' (Size = 4000), @p5='部门管理' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Base_UserLog` (`Id`, `CreateTime`, `CreatorId`, `CreatorRealName`, `LogContent`, `LogType`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2020-08-05 15:12:30.434 +08:00 [INF Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`CreateTime`, `b`.`CreatorId`, `b`.`Deleted`, `b`.`Name`, `b`.`ParentId`
+FROM `Base_Department` AS `b`
+2020-08-05 15:12:30.439 +08:00 [INF CORE.WEBERP.Filter.ApiLogAttribute] 方向:请求本系统
+Url:/Base_Manage/Base_Department/GetTreeDataList
+Time:133ms
+Method:POST
+ContentType:application/json;charset=utf-8
+Body:{}
+
+Response:{"Data":[{"children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"1181175865409540096","ParentId":"1181175685528424448","Level":2,"Text":"管理部","Children":null}],"title":"双羿","value":"1181175685528424448","key":"1181175685528424448","Id":"1181175685528424448","Value":"1181175685528424448","ParentId":"","Level":1,"Text":"双羿","Children":[{"children":null,"title":"数据运营部","value":"1181175803631636480","key":"1181175803631636480","Id":"1181175803631636480","Value":"1181175803631636480","ParentId":"1181175685528424448","Level":2,"Text":"数据运营部","Children":null},{"children":null,"title":"管理部","value":"1181175865409540096","key":"1181175865409540096","Id":"1181175865409540096","Value":"11811758654......
+

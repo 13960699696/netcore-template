@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xVybG09q2QAznHTG2zoHhfZu/FrH1YPOlEZyvDq7y0LJrqp/uUTFqTkWgzMuRX52AZD4Ai5RrgFYS+BQCJYCTQ==",
+  "dgSpecHash": "hFqASexw0FpfL7uf4OaHORvBVl0tHVA2EzV7AGZNb5oPrNDDPA9BHNTyYk7zXQvEfwtRv04KMlGGhlvTFrFRrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PCXT\\Desktop\\netcore-erp\\CORE.WEBERP\\CORE.IBusiness\\CORE.IBusiness.csproj",
+  "projectFilePath": "C:\\Users\\PCXT\\Documents\\netcore-template\\CORE.WEBERP\\CORE.IBusiness\\CORE.IBusiness.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PCXT\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\PCXT\\.nuget\\packages\\caching.csredis\\3.6.5\\caching.csredis.3.6.5.nupkg.sha512",

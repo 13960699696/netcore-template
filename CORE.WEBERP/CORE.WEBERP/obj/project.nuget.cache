@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "irAgZQXkgCZxXPCsbXf4S3F6kIWPGWgyT9o+sZNVWnqEcIPc2ASv1lkp0m8W2gcFuUvXQhrvC5ao0X39YC6PUg==",
+  "dgSpecHash": "OR9KrgN3YE4L4y0ruoaWiT2s7XBRPJbA6aYHOWigakrvv/5iXEB/BuxNcO/BzKuZsbYfztIvn1CXSaOrxDH8bw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PCXT\\Desktop\\netcore-erp\\CORE.WEBERP\\CORE.WEBERP\\CORE.WEBERP.csproj",
+  "projectFilePath": "C:\\Users\\PCXT\\Documents\\netcore-template\\CORE.WEBERP\\CORE.WEBERP\\CORE.WEBERP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PCXT\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\PCXT\\.nuget\\packages\\caching.csredis\\3.6.5\\caching.csredis.3.6.5.nupkg.sha512",
