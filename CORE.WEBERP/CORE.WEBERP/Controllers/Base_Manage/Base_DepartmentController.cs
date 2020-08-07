@@ -8,14 +8,14 @@ using Microsoft.AspNetCore.Mvc;
 namespace CORE.WEBERP.Controllers.Base_Manage
 {
     /// <summary>
-    /// 
+    /// 部门控制器
     /// </summary>
     [Route("/Base_Manage/[controller]/[action]")]
     public class Base_DepartmentController : BaseApiController
     {
         #region DI
         /// <summary>
-        /// 
+        /// 部门控制器构造函数
         /// </summary>
         /// <param name="departmentBus"></param>
         public Base_DepartmentController(IBase_DepartmentBusiness departmentBus)

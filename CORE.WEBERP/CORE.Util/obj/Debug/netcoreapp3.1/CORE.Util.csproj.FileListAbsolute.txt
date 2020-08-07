@@ -28,3 +28,4 @@ C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.Util\obj\Debug\netcore
 C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.Util\obj\Debug\netcoreapp3.1\CORE.Util.csproj.CopyComplete
 C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.Util\obj\Debug\netcoreapp3.1\CORE.Util.dll
 C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.Util\obj\Debug\netcoreapp3.1\CORE.Util.pdb
+C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.Util\obj\Debug\netcoreapp3.1\CORE.Util.csprojAssemblyReference.cache
