@@ -68,6 +68,43 @@
             <param name="ids"></param>
             <returns></returns>
         </member>
+        <member name="T:CORE.WEBERP.Controllers.Base_Manage.Base_AppSecretController">
+            <summary>
+            应用密钥
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_AppSecretController.#ctor(CORE.Business.Base_Manage.IBase_AppSecretBusiness)">
+            <summary>
+            应用密钥构造函数
+            </summary>
+            <param name="appSecretBus"></param>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_AppSecretController.GetDataList(CORE.Util.PageInput{CORE.Business.Base_Manage.AppSecretsInputDTO})">
+            <summary>
+            获取接口密钥列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_AppSecretController.GetTheData(CORE.Util.IdInputDTO)">
+            <summary>
+            获取接口密钥
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_AppSecretController.SaveData(CORE.Entity.Base_Manage.Base_AppSecret)">
+            <summary>
+            保存接口密钥
+            </summary>
+            <param name="theData">保存的数据</param>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_AppSecretController.DeleteData(System.Collections.Generic.List{System.String})">
+            <summary>
+            批量删除接口密钥
+            </summary>
+            <param name="ids">id数组,JSON数组</param>
+        </member>
         <member name="T:CORE.WEBERP.Controllers.Base_Manage.Base_DepartmentController">
             <summary>
             
