@@ -16,54 +16,54 @@
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.#ctor(CORE.Business.Base_Manage.IBase_ActionBusiness)">
             <summary>
-            
+            系统权限构造函数
             </summary>
             <param name="actionBus"></param>
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.GetTheData(CORE.Util.IdInputDTO)">
             <summary>
-            
+            获取权限
             </summary>
             <param name="input"></param>
             <returns></returns>
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.GetPermissionList(CORE.Business.Base_Manage.Base_ActionsInputDTO)">
             <summary>
-            
+            获取指令权限列表
             </summary>
             <param name="input"></param>
             <returns></returns>
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.GetAllActionList">
             <summary>
-            
+            获取权限列表
             </summary>
             <returns></returns>
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.GetMenuTreeList(CORE.Business.Base_Manage.Base_ActionsInputDTO)">
             <summary>
-            
+            获取菜单权限列表
             </summary>
             <param name="input"></param>
             <returns></returns>
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.GetActionTreeList(CORE.Business.Base_Manage.Base_ActionsInputDTO)">
             <summary>
-            
+            获取权限树列表
             </summary>
             <param name="input"></param>
             <returns></returns>
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.SaveData(CORE.Business.Base_Manage.ActionEditInputDTO)">
             <summary>
-            
+            保存权限数据
             </summary>
             <param name="input"></param>
             <returns></returns>
         </member>
         <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_ActionController.DeleteData(System.Collections.Generic.List{System.String})">
             <summary>
-            
+            删除权限数据
             </summary>
             <param name="ids"></param>
             <returns></returns>

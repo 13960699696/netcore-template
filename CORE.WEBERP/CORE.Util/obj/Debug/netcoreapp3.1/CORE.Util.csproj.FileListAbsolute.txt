@@ -22,7 +22,6 @@ C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.Util\bin\Debug\netcore
 C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.Util\bin\Debug\netcoreapp3.1\CORE.Util.dll
 C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.Util\bin\Debug\netcoreapp3.1\CORE.Util.pdb
 C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.Util\bin\Debug\netcoreapp3.1\Aspose.Cells.dll
-C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.Util\obj\Debug\netcoreapp3.1\CORE.Util.csprojAssemblyReference.cache
 C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.Util\obj\Debug\netcoreapp3.1\CORE.Util.AssemblyInfoInputs.cache
 C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.Util\obj\Debug\netcoreapp3.1\CORE.Util.AssemblyInfo.cs
 C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.Util\obj\Debug\netcoreapp3.1\CORE.Util.csproj.CoreCompileInputs.cache

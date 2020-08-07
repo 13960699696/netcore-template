@@ -19,7 +19,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
     {
         #region DI
         /// <summary>
-        /// 
+        /// 系统权限构造函数
         /// </summary>
         /// <param name="actionBus"></param>
         public Base_ActionController(IBase_ActionBusiness actionBus)
@@ -33,7 +33,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
 
         #region 获取
         /// <summary>
-        /// 
+        /// 获取权限
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -43,7 +43,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
             return (await _actionBus.GetTheDataAsync(input.id)) ?? new Base_Action();
         }
         /// <summary>
-        /// 
+        /// 获取指令权限列表
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -55,7 +55,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
             return await _actionBus.GetDataListAsync(input);
         }
         /// <summary>
-        /// 
+        /// 获取权限列表
         /// </summary>
         /// <returns></returns>
         [HttpPost]
@@ -67,7 +67,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
             });
         }
         /// <summary>
-        /// 
+        /// 获取菜单权限列表
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -80,7 +80,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
             return await _actionBus.GetTreeDataListAsync(input);
         }
         /// <summary>
-        /// 
+        /// 获取权限树列表
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -96,7 +96,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
 
         #region 提交
         /// <summary>
-        /// 
+        /// 保存权限数据
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -115,7 +115,7 @@ namespace CORE.WEBERP.Controllers.Base_Manage
             }
         }
         /// <summary>
-        /// 
+        /// 删除权限数据
         /// </summary>
         /// <param name="ids"></param>
         /// <returns></returns>
