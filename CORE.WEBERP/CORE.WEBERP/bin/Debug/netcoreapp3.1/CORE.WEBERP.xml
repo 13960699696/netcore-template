@@ -229,6 +229,30 @@
             <param name="ids"></param>
             <returns></returns>
         </member>
+        <member name="T:CORE.WEBERP.Controllers.Base_Manage.Base_UserLogController">
+            <summary>
+            系统日志控制器
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_UserLogController.#ctor(CORE.Business.Base_Manage.IBase_UserLogBusiness)">
+            <summary>
+            系统日志控制器构造函数
+            </summary>
+            <param name="logBus"></param>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_UserLogController.GetLogList(CORE.Util.PageInput{CORE.Business.Base_Manage.UserLogsInputDTO})">
+            <summary>
+            获取系统日志列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_UserLogController.GetLogTypeList">
+            <summary>
+            获取系统日志类型列表
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:CORE.WEBERP.Controllers.Base_Manage.HomeController">
             <summary>
             首页控制器
