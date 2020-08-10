@@ -262,6 +262,12 @@
             <param name="input">用户旧密码，新密码</param>
             <returns></returns>
         </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.HomeController.GetOperatorMenuList">
+            <summary>
+            获取权限菜单列表
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:CORE.WEBERP.Controllers.WeatherForecastController">
             <summary>
             测试接口

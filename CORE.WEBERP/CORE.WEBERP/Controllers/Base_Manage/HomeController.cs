@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using CORE.Business.Base_Manage;
 using CORE.IBusiness;
 using CORE.WEBERP.Filter;
@@ -69,6 +70,15 @@ namespace CORE.WEBERP.Controllers.Base_Manage
         public async Task ChangePwd(ChangePwdInputDTO input)
         {
             await _homeBus.ChangePwdAsync(input);
+        }
+        /// <summary>
+        /// 获取权限菜单列表
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<List<Base_ActionDTO>> GetOperatorMenuList()
+        {
+            return await _permissionBus.GetUserMenuListAsync(_operator.UserId);
         }
     }
 }
