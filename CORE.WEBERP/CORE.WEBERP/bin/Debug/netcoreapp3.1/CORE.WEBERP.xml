@@ -105,6 +105,43 @@
             </summary>
             <param name="ids">id数组,JSON数组</param>
         </member>
+        <member name="T:CORE.WEBERP.Controllers.Base_Manage.Base_DbLinkController">
+            <summary>
+            数据库控制器
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_DbLinkController.#ctor(CORE.Business.Base_Manage.IBase_DbLinkBusiness)">
+            <summary>
+            数据库控制器构造函数
+            </summary>
+            <param name="dbLinkBus"></param>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_DbLinkController.GetDataList(CORE.Util.PageInput)">
+            <summary>
+            获取数据库连接数据列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_DbLinkController.GetTheData(CORE.Util.IdInputDTO)">
+            <summary>
+            获取数据库连接数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_DbLinkController.SaveData(CORE.Entity.Base_Manage.Base_DbLink)">
+            <summary>
+            保存数据库连接数据
+            </summary>
+            <param name="theData">保存的数据</param>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.Base_DbLinkController.DeleteData(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除数据库连接数据
+            </summary>
+            <param name="ids">id数组,JSON数组</param>
+        </member>
         <member name="T:CORE.WEBERP.Controllers.Base_Manage.Base_DepartmentController">
             <summary>
             部门控制器
