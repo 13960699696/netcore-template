@@ -44,7 +44,11 @@ namespace CORE.Business.Base_Manage
             else
                 return GetTheDbHelper(linkId).GetDbAllTables();
         }
-
+        /// <summary>
+        /// 生成代码
+        /// </summary>
+        /// <param name="linkId">数据库连接Id</param>
+        /// <returns></returns>
         public void Build(BuildInputDTO input)
         {
             string linkId = input.linkId;
@@ -52,8 +56,9 @@ namespace CORE.Business.Base_Manage
             List<string> tables = input.tables;
             List<int> buildTypes = input.buildTypes;
             _areaName = areaName;
-            //内部成员初始化
+            //获取相关数据库的dbHelper
             _dbHelper = GetTheDbHelper(linkId);
+            //获取数据库所有的表添加到字典里
             GetDbTableList(linkId).ForEach(aTable =>
             {
                 _dbTableInfoDic.Add(aTable.TableName, aTable);
@@ -61,9 +66,9 @@ namespace CORE.Business.Base_Manage
 
             tables.ForEach(aTable =>
             {
+                //获取表字段信息
                 var tableFieldInfo = _dbHelper.GetDbTableInfo(aTable);
-
-                //实体名
+                //表实体名
                 string entityName = aTable;
                 //业务逻辑参数名
                 string busName = $"{entityName.ToFirstLowerStr()}Bus";
@@ -72,26 +77,16 @@ namespace CORE.Business.Base_Manage
                 List<string> selectOptionsList = new List<string>();
                 List<string> listColumnsList = new List<string>();
                 List<string> formColumnsList = new List<string>();
+                //提取忽略字段的所有信息
                 tableFieldInfo.Where(x => !ignoreProperties.Contains(x.Name)).ToList().ForEach(aField =>
                 {
-                    if (_dbHelper.DbTypeStr_To_CsharpType(aField.Type) == typeof(string))
-                        selectOptionsList.Add(
-$"                <a-select-option key=\"{aField.Name}\">{aField.Description}</a-select-option>");
-                    listColumnsList.Add(
-$"  {{ title: '{aField.Description}', dataIndex: '{aField.Name}', width: '10%' }},");
-                    formColumnsList.Add(
-$@"        <a-form-model-item label=""{aField.Description}"" prop=""{aField.Name}"">
-          <a-input v-model=""entity.{aField.Name}"" autocomplete=""off"" />
-        </a-form-model-item>");
+              
                     Dictionary<string, string> renderParamters = new Dictionary<string, string>
                     {
                         {$"%{nameof(areaName)}%",areaName },
                         {$"%{nameof(entityName)}%",entityName },
                         {$"%{nameof(busName)}%",busName },
                         {$"%{nameof(_busName)}%",_busName },
-                        {$"%selectOptions%",string.Join("\r\n",selectOptionsList) },
-                        {$"%listColumns%",string.Join("\r\n",listColumnsList) },
-                        {$"%formColumns%",string.Join("\r\n",formColumnsList) }
                     };
 
                     //buildTypes,实体层=0,业务层=1,接口层=2,页面层=3
@@ -109,7 +104,7 @@ $@"        <a-form-model-item label=""{aField.Description}"" prop=""{aField.Name
                         tmpFileName = "IBusiness.txt";
                         savePath = Path.Combine(
                             _solutionPath,
-                            "Coldairarrow.IBusiness",
+                            "CORE.IBusiness",
                             areaName,
                             $"I{entityName}Business.cs");
                         WriteCode(renderParamters, tmpFileName, savePath);
@@ -118,7 +113,7 @@ $@"        <a-form-model-item label=""{aField.Description}"" prop=""{aField.Name
                         tmpFileName = "Business.txt";
                         savePath = Path.Combine(
                             _solutionPath,
-                            "Coldairarrow.Business",
+                            "CORE.Business",
                             areaName,
                             $"{entityName}Business.cs");
                         WriteCode(renderParamters, tmpFileName, savePath);
@@ -129,37 +124,10 @@ $@"        <a-form-model-item label=""{aField.Description}"" prop=""{aField.Name
                         tmpFileName = "Controller.txt";
                         savePath = Path.Combine(
                             _solutionPath,
-                            "Coldairarrow.Api",
+                            "CORE.WEBERP",
                             "Controllers",
                             areaName,
                             $"{entityName}Controller.cs");
-                        WriteCode(renderParamters, tmpFileName, savePath);
-                    }
-                    //页面层
-                    if (buildTypes.Contains(3))
-                    {
-                        //表格页
-                        tmpFileName = "List.txt";
-                        savePath = Path.Combine(
-                            _solutionPath,
-                            "Coldairarrow.Web",
-                            "src",
-                            "views",
-                            areaName,
-                            entityName,
-                            "List.vue");
-                        WriteCode(renderParamters, tmpFileName, savePath);
-
-                        //表单页
-                        tmpFileName = "EditForm.txt";
-                        savePath = Path.Combine(
-                            _solutionPath,
-                            "Coldairarrow.Web",
-                            "src",
-                            "views",
-                            areaName,
-                            entityName,
-                            "EditForm.vue");
                         WriteCode(renderParamters, tmpFileName, savePath);
                     }
                 });
@@ -174,8 +142,10 @@ $@"        <a-form-model-item label=""{aField.Description}"" prop=""{aField.Name
         private string _areaName { get; set; }
         private void BuildEntity(List<TableInfo> tableInfo, string tableName)
         {
-            string nameSpace = $@"Coldairarrow.Entity.{_areaName}";
-            string filePath = Path.Combine(_solutionPath, "Coldairarrow.Entity", _areaName, $"{tableName}.cs");
+            //区域名
+            string nameSpace = $@"CORE.Entity.{_areaName}";
+            //生成全路径
+            string filePath = Path.Combine(_solutionPath, "CORE.Entity", _areaName, $"{tableName}.cs");
 
             _dbHelper.SaveEntityToFile(tableInfo, tableName, _dbTableInfoDic[tableName].Description, filePath, nameSpace);
         }
@@ -198,7 +168,7 @@ $@"        <a-form-model-item label=""{aField.Description}"" prop=""{aField.Name
         private Dictionary<string, DbTableInfo> _dbTableInfoDic { get; set; } = new Dictionary<string, DbTableInfo>();
         private void WriteCode(Dictionary<string, string> paramters, string templateFileName, string savePath)
         {
-            string tmpFileText = File.ReadAllText(Path.Combine(_solutionPath, "Coldairarrow.Api", "BuildCodeTemplate", templateFileName));
+            string tmpFileText = File.ReadAllText(Path.Combine(_solutionPath, "CORE.WEBERP", "BuildCodeTemplate", templateFileName));
             paramters.ForEach(aParamter =>
             {
                 tmpFileText = tmpFileText.Replace(aParamter.Key, aParamter.Value);

@@ -290,6 +290,36 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:CORE.WEBERP.Controllers.Base_Manage.BuildCodeController">
+            <summary>
+            代码生成器
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.BuildCodeController.#ctor(CORE.Business.Base_Manage.IBuildCodeBusiness)">
+            <summary>
+            代码生成器控制器
+            </summary>
+            <param name="buildCodeBus"></param>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.BuildCodeController.GetAllDbLink">
+            <summary>
+            获取所有数据库连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.BuildCodeController.GetDbTableList(CORE.Business.Base_Manage.DbTablesInputDTO)">
+            <summary>
+            获取数据库表列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.Base_Manage.BuildCodeController.Build(CORE.Business.Base_Manage.BuildInputDTO)">
+            <summary>
+            代码生成
+            </summary>
+            <param name="input"></param>
+        </member>
         <member name="T:CORE.WEBERP.Controllers.Base_Manage.HomeController">
             <summary>
             首页控制器
@@ -327,6 +357,46 @@
             <summary>
             获取权限菜单列表
             </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CORE.WEBERP.Controllers.test.base_buildtestController">
+            <summary>
+            test控制器
+            </summary>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.test.base_buildtestController.#ctor(CORE.Business.test.Ibase_buildtestBusiness)">
+            <summary>
+            test控制器构造函数
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.test.base_buildtestController.GetDataList(CORE.Util.PageInput{CORE.Util.ConditionDTO})">
+            <summary>
+            获取test数据列表
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.test.base_buildtestController.GetTheData(CORE.Util.IdInputDTO)">
+            <summary>
+            获取test数据
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.test.base_buildtestController.SaveData(CORE.Entity.test.base_buildtest)">
+            <summary>
+            保存test数据
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CORE.WEBERP.Controllers.test.base_buildtestController.DeleteData(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除test数据
+            </summary>
+            <param name="data"></param>
             <returns></returns>
         </member>
         <member name="T:CORE.WEBERP.Controllers.WeatherForecastController">

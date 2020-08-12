@@ -1,0 +1,88 @@
+﻿using CORE.Business.%areaName%;
+using CORE.Entity.%areaName%;
+using CORE.Util;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace CORE.WEBERP.Controllers.%areaName%
+{
+    /// <summary>
+    /// %areaName%控制器
+    /// </summary>
+    [Route("/%areaName%/[controller]/[action]")]
+    public class %entityName%Controller : BaseApiController
+    {
+        #region DI
+        /// <summary>
+        /// %areaName%控制器构造函数
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public %entityName%Controller(I%entityName%Business %busName%)
+        {
+            %_busName% = %busName%;
+        }
+
+        I%entityName%Business %_busName% { get; }
+
+        #endregion
+
+        #region 获取
+        /// <summary>
+        /// 获取%areaName%数据列表
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<PageResult<%entityName%>> GetDataList(PageInput<ConditionDTO> input)
+        {
+            return await %_busName%.GetDataListAsync(input);
+        }
+        /// <summary>
+        /// 获取%areaName%数据
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<%entityName%> GetTheData(IdInputDTO input)
+        {
+            return await %_busName%.GetTheDataAsync(input.id);
+        }
+
+        #endregion
+
+        #region 提交
+        /// <summary>
+        /// 保存%areaName%数据
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task SaveData(%entityName% data)
+        {
+            if (data.Id.IsNullOrEmpty())
+            {
+                InitEntity(data);
+
+                await %_busName%.AddDataAsync(data);
+            }
+            else
+            {
+                await %_busName%.UpdateDataAsync(data);
+            }
+        }
+        /// <summary>
+        /// 删除%areaName%数据
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task DeleteData(List<string> ids)
+        {
+            await %_busName%.DeleteDataAsync(ids);
+        }
+
+        #endregion
+    }
+}
