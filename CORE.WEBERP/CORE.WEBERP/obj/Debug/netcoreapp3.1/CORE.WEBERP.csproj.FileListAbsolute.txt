@@ -340,3 +340,4 @@ C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.WEBERP\obj\Debug\netco
 C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.WEBERP\obj\Debug\netcoreapp3.1\CORE.WEBERP.dll
 C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.WEBERP\obj\Debug\netcoreapp3.1\CORE.WEBERP.pdb
 C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.WEBERP\obj\Debug\netcoreapp3.1\CORE.WEBERP.genruntimeconfig.cache
+C:\Users\PCXT\Documents\netcore-template\CORE.WEBERP\CORE.WEBERP\bin\Debug\netcoreapp3.1\appsettings.Production.json
